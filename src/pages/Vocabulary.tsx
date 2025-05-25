@@ -1,16 +1,30 @@
+import { useState } from "react";
+import { vocabulary } from "../data/vocabulary";
+import { Card } from "../components/Card";
+
 export default function Vocabulary() {
-    return (
-        <div className="min-h-screen bg-white text-gray-900">
-            <header className="bg-blue-900 text-white py-6 px-4 shadow-md">
-                <div className="max-w-5xl mx-auto">
-                    <h1 className="text-3xl font-bold">Словарный запас</h1>
-                    <p className="text-sm mt-1">Увеличивай запас слов с помощью карточек и тестов.</p>
-                </div>
-            </header>
-            <main className="max-w-5xl mx-auto px-4 py-10">
-                <h2 className="text-2xl font-semibold mb-6">Упражнения по словарному запасу</h2>
-                {/* Здесь можно добавить контент для упражнений */}
-            </main>
-        </div>
-    );
+  const [reveal, setReveal] = useState<{ [key: number]: 0 | 1 | 2 }>({});
+
+  const handleClick = (id: number) => {
+    setReveal((prev) => ({
+      ...prev,
+      [id]: ((prev[id] ?? 0) + 1) % 3 as 0 | 1 | 2,
+    }));
+  };
+
+  return (
+    <div className="p-6">
+      <h2 className="text-2xl font-bold mb-6">Словарь</h2>
+      <ul className="space-y-4">
+        {vocabulary.map((word) => (
+          <Card
+            key={word.id}
+            word={word}
+            state={reveal[word.id] ?? 0}
+            onClick={() => handleClick(word.id)}
+          />
+        ))}
+      </ul>
+    </div>
+  );
 }
