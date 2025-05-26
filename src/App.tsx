@@ -4,6 +4,7 @@ import Vocabulary from './pages/Vocabulary';
 import Grammar from './pages/Grammar';
 import Listening from './pages/listening';
 import Header from './components/Header';
+import Home from './pages/Home';
 
 
 export default function App() {
@@ -13,7 +14,8 @@ export default function App() {
         <Header/>
       <main className="max-w-5xl mx-auto px-4 py-10">
       <Routes>
-        <Route path='/' element={<Vocabulary/>} />
+        <Route path='/' element={<Home />} />
+        <Route path='/vocabulary' element={<Vocabulary />} />
         <Route path='/grammar' element={<Grammar/>} />
         <Route path='/listening' element={<Listening/>} />
       </Routes>
