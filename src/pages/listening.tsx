@@ -1,7 +1,7 @@
 export default function Listening() {
     return (
         <div className="min-h-screen bg-white text-gray-900">
-        <header className="bg-blue-900 text-white py-6 px-4 shadow-md">
+        <header className="bg-teal-500 text-white py-6 px-4 shadow-md">
             <div className="max-w-5xl mx-auto">
             <h1 className="text-3xl font-bold">Аудирование</h1>
             <p className="text-sm mt-1">Развивай понимание речи на слух с помощью аудио.</p>

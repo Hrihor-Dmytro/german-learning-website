@@ -12,7 +12,7 @@ export default function App() {
   return (
     <div className="App">
         <Header/>
-      <main className="max-w-5xl mx-auto px-4 py-10">
+      <main>
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/vocabulary' element={<Vocabulary />} />

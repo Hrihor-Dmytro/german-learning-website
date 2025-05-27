@@ -20,7 +20,7 @@ export function Card({ word, state, onClick }: CardProps) {
       ref={ref}
       className="border rounded-xl p-5 shadow cursor-pointer transition hover:shadow-lg bg-white"
     >
-      <p className="text-xl font-semibold text-blue-900">{word.german}</p>
+      <p className="text-xl font-semibold">{word.german}</p>
 
       <div
         className={`transition-all duration-900 ease-in-out overflow-hidden ${
