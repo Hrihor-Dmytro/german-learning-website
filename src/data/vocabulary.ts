@@ -127,3 +127,28 @@ export const vocabulary:Word[] = [
     russian: "помогать, Ты можешь мне помочь?"
   },
 ];
+
+export const vocabularyB1: Word[] = [
+  { id: 1, german: "erklären", russian: "объяснять", example: "Er erklärt die Aufgabe." },
+  { id: 2, german: "versuchen", russian: "пытаться", example: "Ich versuche, Deutsch zu sprechen." },
+  { id: 3, german: "vergessen", russian: "забывать", example: "Ich habe meinen Schlüssel vergessen." },
+  { id: 4, german: "erreichen", russian: "достигать", example: "Wir erreichen unser Ziel." },
+  { id: 5, german: "benutzen", russian: "использовать", example: "Er benutzt das Wörterbuch." }
+];
+
+export const vocabularyB1B2: Word[] = [
+  { id: 1, german: "vergleichen", russian: "сравнивать", example: "Man kann die Preise vergleichen." },
+  { id: 2, german: "entdecken", russian: "открывать, обнаруживать", example: "Sie entdeckt ein neues Talent." },
+  { id: 3, german: "erleben", russian: "переживать, испытывать", example: "Wir erleben ein Abenteuer." },
+  { id: 4, german: "erziehen", russian: "воспитывать", example: "Die Eltern erziehen ihre Kinder." },
+  { id: 5, german: "vermeiden", russian: "избегать", example: "Man sollte Fehler vermeiden." }
+];
+
+export const vocabularyC1: Word[] = [
+  { id: 1, german: "bewältigen", russian: "справляться", example: "Er kann Stress gut bewältigen." },
+  { id: 2, german: "widersprechen", russian: "возражать", example: "Ich muss dir widersprechen." },
+  { id: 3, german: "überzeugen", russian: "убеждать", example: "Sie überzeugt ihn mit Argumenten." },
+  { id: 4, german: "beantragen", russian: "подавать заявление", example: "Er beantragt das Visum." },
+  { id: 5, german: "verzichten", russian: "отказываться", example: "Ich verzichte auf Zucker." }
+];
+
