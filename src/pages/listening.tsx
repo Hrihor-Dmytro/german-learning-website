@@ -9,7 +9,7 @@ export default function Listening() {
         </header>
         <main className="max-w-5xl mx-auto px-4 py-10">
             <h2 className="text-2xl font-semibold mb-6">Упражнения по аудированию</h2>
-            {/* Здесь можно добавить контент для упражнений */}
+            {/* Здесь будет контент для упражнений */}
         </main>
         </div>
     );

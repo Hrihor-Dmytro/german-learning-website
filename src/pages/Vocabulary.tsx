@@ -13,8 +13,10 @@ export default function Vocabulary() {
   };
 
   return (
-    <div className="p-6">
-      <h2 className="text-2xl font-bold mb-6">Словарь</h2>
+    <div className="p-6 bg-white dark:bg-gray-900 min-h-screen">
+      <h2 className="text-2xl font-bold mb-6 text-gray-900 dark:text-gray-100">
+        Словарь
+      </h2>
       <ul className="space-y-4">
         {vocabulary.map((word) => (
           <Card
