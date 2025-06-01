@@ -8,7 +8,7 @@ import Home from './pages/Home';
 
 export default function App() {
   return (
-      <div className="App bg-white dark:bg-gray-900 min-h-screen">
+      <div className="min-h-screen bg-white text-black dark:bg-black dark:text-white transition-colors duration-300">
         <Header />
         <main className="container mx-auto px-4 py-8">
           <Routes>
