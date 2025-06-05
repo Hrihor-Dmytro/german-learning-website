@@ -1,7 +1,7 @@
 import { useState, useMemo } from "react";
 import { vocabulary } from "../data/vocabulary";
 import { Card } from "../components/Card";
-import { ArrowUp } from 'lucide-react';
+import { ArrowUp } from "lucide-react";
 
 const levelsOrder = ["A1", "A2", "B1", "B2", "C1"];
 
@@ -14,27 +14,28 @@ export default function Vocabulary() {
 
   // Мемоизированные вычисления для оптимизации
   const { filteredCards, totalPages, paginatedCards } = useMemo(() => {
-    const filtered = vocabulary.filter(word => 
-      word.level === selectedLevel &&
-      (word.german.toLowerCase().includes(searchQuery.toLowerCase()) ||
-       word.russian.toLowerCase().includes(searchQuery.toLowerCase()))
+    const filtered = vocabulary.filter(
+      (word) =>
+        word.level === selectedLevel &&
+        (word.german.toLowerCase().includes(searchQuery.toLowerCase()) ||
+          word.russian.toLowerCase().includes(searchQuery.toLowerCase())),
     );
-    
+
     const total = Math.ceil(filtered.length / cardsPerPage);
     const start = (currentPage - 1) * cardsPerPage;
     const paginated = filtered.slice(start, start + cardsPerPage);
 
-    return { 
+    return {
       filteredCards: filtered,
       totalPages: total,
-      paginatedCards: paginated
+      paginatedCards: paginated,
     };
   }, [selectedLevel, currentPage, searchQuery]);
 
   const handleClick = (id: number) => {
-    setReveal(prev => ({
+    setReveal((prev) => ({
       ...prev,
-      [id]: ((prev[id] ?? 0) + 1) % 3 as 0 | 1 | 2,
+      [id]: (((prev[id] ?? 0) + 1) % 3) as 0 | 1 | 2,
     }));
   };
 
@@ -43,7 +44,7 @@ export default function Vocabulary() {
     setCurrentPage(1);
   };
 
-  const scrollToTop = () => window.scrollTo({ top: 0, behavior: 'smooth' });
+  const scrollToTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
 
   return (
     <div className="p-6 bg-white dark:bg-gray-900 min-h-screen">
@@ -51,17 +52,17 @@ export default function Vocabulary() {
         Словарь
       </h2>
 
-      {/* Фильтры */}
+      {/* фильтр и поиск */}
       <div className="mb-6 space-y-4">
         <div className="flex flex-wrap gap-2">
-          {levelsOrder.map(level => (
+          {levelsOrder.map((level) => (
             <button
               key={level}
               onClick={() => changeLevel(level)}
               className={`px-4 py-2 rounded-full transition-colors ${
-                selectedLevel === level 
-                  ? 'bg-teal-600 text-white' 
-                  : 'bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600'
+                selectedLevel === level
+                  ? "bg-teal-600 text-white"
+                  : "bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600"
               }`}
             >
               {level}
@@ -83,14 +84,13 @@ export default function Vocabulary() {
 
       {/* Статистика */}
       <div className="mb-4 text-sm text-gray-600 dark:text-gray-400">
-        Найдено слов: {filteredCards.length} | 
-        Показано: {paginatedCards.length}
+        Найдено слов: {filteredCards.length} | Показано: {paginatedCards.length}
       </div>
 
       {/* Список карточек */}
       {paginatedCards.length > 0 ? (
         <ul className="space-y-4">
-          {paginatedCards.map(word => (
+          {paginatedCards.map((word) => (
             <Card
               key={word.id}
               word={word}
@@ -101,9 +101,9 @@ export default function Vocabulary() {
         </ul>
       ) : (
         <p className="text-gray-600 dark:text-gray-400 text-center py-8">
-          {searchQuery ? 
-            "Ничего не найдено по вашему запросу" : 
-            `Нет слов для уровня ${selectedLevel}`}
+          {searchQuery
+            ? "Ничего не найдено по вашему запросу"
+            : `Нет слов для уровня ${selectedLevel}`}
         </p>
       )}
 
@@ -111,13 +111,13 @@ export default function Vocabulary() {
       {totalPages > 1 && (
         <div className="flex justify-center items-center gap-4 mt-6">
           <button
-            onClick={() => setCurrentPage(p => Math.max(p - 1, 1))}
+            onClick={() => setCurrentPage((p) => Math.max(p - 1, 1))}
             disabled={currentPage === 1}
             className="px-4 py-2 rounded-full bg-teal-600 text-white disabled:opacity-50 hover:bg-teal-700 transition-colors"
           >
             Назад
           </button>
-          
+
           <div className="flex items-center gap-2">
             {Array.from({ length: totalPages }, (_, i) => (
               <button
@@ -125,17 +125,17 @@ export default function Vocabulary() {
                 onClick={() => setCurrentPage(i + 1)}
                 className={`w-8 h-8 rounded-full ${
                   currentPage === i + 1
-                    ? 'bg-teal-600 text-white'
-                    : 'bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-300'
+                    ? "bg-teal-600 text-white"
+                    : "bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-300"
                 }`}
               >
                 {i + 1}
               </button>
             ))}
           </div>
-          
+
           <button
-            onClick={() => setCurrentPage(p => Math.min(p + 1, totalPages))}
+            onClick={() => setCurrentPage((p) => Math.min(p + 1, totalPages))}
             disabled={currentPage === totalPages}
             className="px-4 py-2 rounded-full bg-teal-600 text-white disabled:opacity-50 hover:bg-teal-700 transition-colors"
           >

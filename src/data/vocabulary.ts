@@ -1,1612 +1,1727 @@
 export interface Word {
-    id: number; 
-    german: string;
-    russian: string;
-    example: string;
-    category: string;
-    level: string;
+  id: number;
+  german: string;
+  russian: string;
+  example: string;
+  category: string;
+  level: string;
 }
 
-export const vocabulary:Word[] = [
-   {
-    "id": 1,
-    "german": "die Umwelt",
-    "example": "Wir müssen die Umwelt schützen.",
-    "russian": "окружающая среда, Мы должны защищать окружающую среду.",
-    "category": "Экология",
-    "level": "B1"
-  },
-  {
-    "id": 2,
-    "german": "der Klimawandel",
-    "example": "Der Klimawandel ist eine große Herausforderung für die Menschheit.",
-    "russian": "изменение климата, Изменение климата - это большой вызов для человечества.",
-    "category": "Экология",
-    "level": "B1"
-  },
-  {
-    "id": 3,
-    "german": "die Nachhaltigkeit",
-    "example": "Nachhaltigkeit ist wichtig für unsere Zukunft.",
-    "russian": "устойчивое развитие, Устойчивое развитие важно для нашего будущего.",
-    "category": "Экология",
-    "level": "B1"
-  },
-  {
-    "id": 4,
-    "german": "die Verantwortung",
-    "example": "Jeder trägt Verantwortung für den Umweltschutz.",
-    "russian": "ответственность, Каждый несет ответственность за защиту окружающей среды.",
-    "category": "Общество",
-    "level": "B1"
-  },
-  {
-    "id": 5,
-    "german": "die Erfahrung",
-    "example": "Ich habe viele Erfahrungen im Ausland gesammelt.",
-    "russian": "опыт, Я получил много опыта за границей.",
-    "category": "Личное развитие",
-    "level": "B1"
-  },
-  {
-    "id": 6,
-    "german": "die Entscheidung",
-    "example": "Diese Entscheidung wird mein Leben verändern.",
-    "russian": "решение, Это решение изменит мою жизнь.",
-    "category": "Личное развитие",
-    "level": "B1"
-  },
-  {
-    "id": 7,
-    "german": "die Möglichkeit",
-    "example": "Es gibt viele Möglichkeiten, Deutsch zu lernen.",
-    "russian": "возможность, Существует много возможностей изучать немецкий язык.",
-    "category": "Образование",
-    "level": "B1"
-  },
-  {
-    "id": 8,
-    "german": "die Entwicklung",
-    "example": "Die Entwicklung neuer Technologien schreitet schnell voran.",
-    "russian": "развитие, Развитие новых технологий быстро продвигается вперед.",
-    "category": "Технологии",
-    "level": "B1"
-  },
-  {
-    "id": 9,
-    "german": "die Bedeutung",
-    "example": "Die Bedeutung von Fremdsprachen nimmt immer mehr zu.",
-    "russian": "значение, важность, Значение иностранных языков постоянно возрастает.",
-    "category": "Образование",
-    "level": "B1"
-  },
-  {
-    "id": 10,
-    "german": "die Gesellschaft",
-    "example": "Unsere Gesellschaft verändert sich ständig.",
-    "russian": "общество, Наше общество постоянно меняется.",
-    "category": "Общество",
-    "level": "B1"
-  },
-  {
-    "id": 11,
-    "german": "die Herausforderung",
-    "example": "Die Integration von Flüchtlingen ist eine große Herausforderung.",
-    "russian": "вызов, проблема, Интеграция беженцев - это большая проблема.",
-    "category": "Общество",
-    "level": "B2"
-  },
-  {
-    "id": 12,
-    "german": "die Auswirkung",
-    "example": "Die Auswirkungen der Pandemie sind noch immer spürbar.",
-    "russian": "последствие, влияние, Последствия пандемии все еще ощутимы.",
-    "category": "Общество",
-    "level": "B2"
-  },
-  {
-    "id": 13,
-    "german": "die Voraussetzung",
-    "example": "Gute Sprachkenntnisse sind eine wichtige Voraussetzung für diesen Job.",
-    "russian": "предпосылка, условие, Хорошее знание языка является важным условием для этой работы.",
-    "category": "Работа",
-    "level": "B2"
+export const vocabulary: Word[] = [
+  {
+    id: 1,
+    german: "die Umwelt",
+    example: "Wir müssen die Umwelt schützen.",
+    russian: "окружающая среда, Мы должны защищать окружающую среду.",
+    category: "Экология",
+    level: "B1",
+  },
+  {
+    id: 2,
+    german: "der Klimawandel",
+    example:
+      "Der Klimawandel ist eine große Herausforderung für die Menschheit.",
+    russian:
+      "изменение климата, Изменение климата - это большой вызов для человечества.",
+    category: "Экология",
+    level: "B1",
+  },
+  {
+    id: 3,
+    german: "die Nachhaltigkeit",
+    example: "Nachhaltigkeit ist wichtig für unsere Zukunft.",
+    russian:
+      "устойчивое развитие, Устойчивое развитие важно для нашего будущего.",
+    category: "Экология",
+    level: "B1",
+  },
+  {
+    id: 4,
+    german: "die Verantwortung",
+    example: "Jeder trägt Verantwortung für den Umweltschutz.",
+    russian:
+      "ответственность, Каждый несет ответственность за защиту окружающей среды.",
+    category: "Общество",
+    level: "B1",
+  },
+  {
+    id: 5,
+    german: "die Erfahrung",
+    example: "Ich habe viele Erfahrungen im Ausland gesammelt.",
+    russian: "опыт, Я получил много опыта за границей.",
+    category: "Личное развитие",
+    level: "B1",
+  },
+  {
+    id: 6,
+    german: "die Entscheidung",
+    example: "Diese Entscheidung wird mein Leben verändern.",
+    russian: "решение, Это решение изменит мою жизнь.",
+    category: "Личное развитие",
+    level: "B1",
+  },
+  {
+    id: 7,
+    german: "die Möglichkeit",
+    example: "Es gibt viele Möglichkeiten, Deutsch zu lernen.",
+    russian:
+      "возможность, Существует много возможностей изучать немецкий язык.",
+    category: "Образование",
+    level: "B1",
+  },
+  {
+    id: 8,
+    german: "die Entwicklung",
+    example: "Die Entwicklung neuer Technologien schreitet schnell voran.",
+    russian: "развитие, Развитие новых технологий быстро продвигается вперед.",
+    category: "Технологии",
+    level: "B1",
+  },
+  {
+    id: 9,
+    german: "die Bedeutung",
+    example: "Die Bedeutung von Fremdsprachen nimmt immer mehr zu.",
+    russian:
+      "значение, важность, Значение иностранных языков постоянно возрастает.",
+    category: "Образование",
+    level: "B1",
+  },
+  {
+    id: 10,
+    german: "die Gesellschaft",
+    example: "Unsere Gesellschaft verändert sich ständig.",
+    russian: "общество, Наше общество постоянно меняется.",
+    category: "Общество",
+    level: "B1",
+  },
+  {
+    id: 11,
+    german: "die Herausforderung",
+    example: "Die Integration von Flüchtlingen ist eine große Herausforderung.",
+    russian: "вызов, проблема, Интеграция беженцев - это большая проблема.",
+    category: "Общество",
+    level: "B2",
+  },
+  {
+    id: 12,
+    german: "die Auswirkung",
+    example: "Die Auswirkungen der Pandemie sind noch immer spürbar.",
+    russian: "последствие, влияние, Последствия пандемии все еще ощутимы.",
+    category: "Общество",
+    level: "B2",
+  },
+  {
+    id: 13,
+    german: "die Voraussetzung",
+    example:
+      "Gute Sprachkenntnisse sind eine wichtige Voraussetzung für diesen Job.",
+    russian:
+      "предпосылка, условие, Хорошее знание языка является важным условием для этой работы.",
+    category: "Работа",
+    level: "B2",
+  },
+  {
+    id: 14,
+    german: "die Auseinandersetzung",
+    example: "Die Auseinandersetzung mit der eigenen Geschichte ist wichtig.",
+    russian:
+      "конфронтация, разбирательство, Разбирательство с собственной историей важно.",
+    category: "Общество",
+    level: "B2",
+  },
+  {
+    id: 15,
+    german: "die Digitalisierung",
+    example: "Die Digitalisierung verändert unsere Arbeitswelt.",
+    russian: "цифровизация, Цифровизация меняет наш рабочий мир.",
+    category: "Технологии",
+    level: "B2",
+  },
+  {
+    id: 16,
+    german: "der Ansatz",
+    example: "Wir brauchen einen neuen Ansatz zur Lösung dieses Problems.",
+    russian: "подход, метод, Нам нужен новый подход к решению этой проблемы.",
+    category: "Методология",
+    level: "B2",
+  },
+  {
+    id: 17,
+    german: "die Wahrnehmung",
+    example: "Die Wahrnehmung der Realität ist subjektiv.",
+    russian: "восприятие, Восприятие реальности субъективно.",
+    category: "Психология",
+    level: "B2",
+  },
+  {
+    id: 18,
+    german: "die Perspektive",
+    example: "Man sollte Probleme aus verschiedenen Perspektiven betrachten.",
+    russian:
+      "перспектива, точка зрения, Следует рассматривать проблемы с разных точек зрения.",
+    category: "Методология",
+    level: "B2",
+  },
+  {
+    id: 19,
+    german: "die Anwendung",
+    example:
+      "Die praktische Anwendung theoretischer Konzepte ist oft schwierig.",
+    russian:
+      "применение, использование, Практическое применение теоретических концепций часто сложно.",
+    category: "Образование",
+    level: "B2",
+  },
+  {
+    id: 20,
+    german: "die Förderung",
+    example:
+      "Die Förderung junger Talente ist eine Investition in die Zukunft.",
+    russian:
+      "поддержка, содействие, Поддержка молодых талантов - это инвестиция в будущее.",
+    category: "Образование",
+    level: "B2",
+  },
+  {
+    id: 21,
+    german: "die Differenzierung",
+    example: "Eine klare Differenzierung zwischen den Produkten ist notwendig.",
+    russian:
+      "дифференциация, различение, Четкое различение между продуктами необходимо.",
+    category: "Бизнес",
+    level: "C1",
+  },
+  {
+    id: 22,
+    german: "die Ambivalenz",
+    example: "Die Ambivalenz seiner Gefühle machte ihn handlungsunfähig.",
+    russian:
+      "амбивалентность, двойственность, Двойственность его чувств сделала его неспособным действовать.",
+    category: "Психология",
+    level: "C1",
+  },
+  {
+    id: 23,
+    german: "die Interdependenz",
+    example: "Die Interdependenz der globalen Märkte ist offensichtlich.",
+    russian: "взаимозависимость, Взаимозависимость глобальных рынков очевидна.",
+    category: "Экономика",
+    level: "C1",
+  },
+  {
+    id: 24,
+    german: "die Konnotation",
+    example: "Dieses Wort hat eine negative Konnotation in diesem Kontext.",
+    russian:
+      "коннотация, Это слово имеет негативную коннотацию в данном контексте.",
+    category: "Лингвистика",
+    level: "C1",
+  },
+  {
+    id: 25,
+    german: "die Prämisse",
+    example: "Seine Argumentation basiert auf einer falschen Prämisse.",
+    russian:
+      "предпосылка, посылка, Его аргументация основана на ложной предпосылке.",
+    category: "Логика",
+    level: "C1",
+  },
+  {
+    id: 26,
+    german: "die Reziprozität",
+    example:
+      "Reziprozität ist ein grundlegendes Prinzip in sozialen Beziehungen.",
+    russian:
+      "взаимность, Взаимность - это фундаментальный принцип в социальных отношениях.",
+    category: "Социология",
+    level: "C1",
+  },
+  {
+    id: 27,
+    german: "die Diskrepanz",
+    example: "Es gibt eine Diskrepanz zwischen Theorie und Praxis.",
+    russian:
+      "расхождение, несоответствие, Существует расхождение между теорией и практикой.",
+    category: "Наука",
+    level: "C1",
+  },
+  {
+    id: 28,
+    german: "die Implikation",
+    example: "Die Implikationen dieser Entscheidung sind weitreichend.",
+    russian: "последствие, значение, Последствия этого решения далеко идущие.",
+    category: "Логика",
+    level: "C1",
+  },
+  {
+    id: 29,
+    german: "die Kohärenz",
+    example: "Die Kohärenz seiner Argumentation überzeugte das Publikum.",
+    russian:
+      "связность, согласованность, Связность его аргументации убедила публику.",
+    category: "Логика",
+    level: "C1",
+  },
+  {
+    id: 30,
+    german: "die Divergenz",
+    example:
+      "Die Divergenz der Meinungen führte zu einer lebhaften Diskussion.",
+    russian:
+      "расхождение, различие, Расхождение мнений привело к оживленной дискуссии.",
+    category: "Коммуникация",
+    level: "C1",
+  },
+  {
+    id: 31,
+    german: "das Verständnis",
+    example: "Ein tiefes Verständnis der Materie ist erforderlich.",
+    russian: "понимание, Требуется глубокое понимание предмета.",
+    category: "Образование",
+    level: "B1",
+  },
+  {
+    id: 32,
+    german: "das Bewusstsein",
+    example: "Das Umweltbewusstsein wächst in der Gesellschaft.",
+    russian: "сознание, осознание, Экологическое сознание растет в обществе.",
+    category: "Экология",
+    level: "B1",
+  },
+  {
+    id: 33,
+    german: "das Verhältnis",
+    example: "Das Verhältnis zwischen Arbeit und Freizeit ist wichtig.",
+    russian:
+      "отношение, соотношение, Соотношение между работой и свободным временем важно.",
+    category: "Работа",
+    level: "B1",
+  },
+  {
+    id: 34,
+    german: "das Ereignis",
+    example: "Dieses Ereignis hat mein Leben verändert.",
+    russian: "событие, происшествие, Это событие изменило мою жизнь.",
+    category: "Личное развитие",
+    level: "B1",
+  },
+  {
+    id: 35,
+    german: "das Verhalten",
+    example: "Sein Verhalten war in dieser Situation unangemessen.",
+    russian: "поведение, Его поведение было неуместным в этой ситуации.",
+    category: "Психология",
+    level: "B1",
+  },
+  {
+    id: 36,
+    german: "das Phänomen",
+    example: "Dieses Phänomen lässt sich wissenschaftlich erklären.",
+    russian: "феномен, явление, Это явление можно объяснить научно.",
+    category: "Наука",
+    level: "B2",
+  },
+  {
+    id: 37,
+    german: "das Konzept",
+    example: "Das Konzept muss noch weiter ausgearbeitet werden.",
+    russian: "концепция, концепт, Концепцию нужно еще доработать.",
+    category: "Методология",
+    level: "B2",
+  },
+  {
+    id: 38,
+    german: "das Potenzial",
+    example: "Das Potenzial dieser Technologie ist noch nicht ausgeschöpft.",
+    russian: "потенциал, Потенциал этой технологии еще не исчерпан.",
+    category: "Технологии",
+    level: "B2",
+  },
+  {
+    id: 39,
+    german: "das Dilemma",
+    example: "Wir stehen vor einem ethischen Dilemma.",
+    russian: "дилемма, Мы стоим перед этической дилеммой.",
+    category: "Этика",
+    level: "B2",
+  },
+  {
+    id: 40,
+    german: "das Kriterium",
+    example: "Dieses Kriterium ist entscheidend für die Auswahl.",
+    russian: "критерий, Этот критерий является решающим для выбора.",
+    category: "Методология",
+    level: "B2",
+  },
+  {
+    id: 41,
+    german: "das Paradigma",
+    example: "Ein Paradigmenwechsel ist in diesem Bereich notwendig.",
+    russian: "парадигма, В этой области необходима смена парадигмы.",
+    category: "Наука",
+    level: "C1",
+  },
+  {
+    id: 42,
+    german: "das Konstrukt",
+    example: "Identität ist ein soziales Konstrukt.",
+    russian: "конструкт, Идентичность - это социальный конструкт.",
+    category: "Социология",
+    level: "C1",
+  },
+  {
+    id: 43,
+    german: "das Postulat",
+    example: "Dieses Postulat bildet die Grundlage seiner Theorie.",
+    russian: "постулат, Этот постулат формирует основу его теории.",
+    category: "Философия",
+    level: "C1",
+  },
+  {
+    id: 44,
+    german: "das Axiom",
+    example:
+      "Ein Axiom ist eine grundlegende Annahme, die nicht bewiesen werden muss.",
+    russian:
+      "аксиома, Аксиома - это фундаментальное предположение, которое не требует доказательства.",
+    category: "Математика",
+    level: "C1",
+  },
+  {
+    id: 45,
+    german: "das Paradoxon",
+    example: "Dieses Paradoxon lässt sich nicht einfach auflösen.",
+    russian: "парадокс, Этот парадокс нельзя легко разрешить.",
+    category: "Логика",
+    level: "C1",
+  },
+  {
+    id: 46,
+    german: "der Fortschritt",
+    example: "Der technologische Fortschritt verändert unser Leben.",
+    russian: "прогресс, Технологический прогресс меняет нашу жизнь.",
+    category: "Технологии",
+    level: "B1",
+  },
+  {
+    id: 47,
+    german: "der Einfluss",
+    example: "Der Einfluss der Medien auf die öffentliche Meinung ist groß.",
+    russian: "влияние, Влияние СМИ на общественное мнение велико.",
+    category: "Медиа",
+    level: "B1",
+  },
+  {
+    id: 48,
+    german: "der Zusammenhang",
+    example:
+      "Es besteht ein direkter Zusammenhang zwischen Ernährung und Gesundheit.",
+    russian:
+      "связь, взаимосвязь, Существует прямая связь между питанием и здоровьем.",
+    category: "Здоровье",
+    level: "B1",
+  },
+  {
+    id: 49,
+    german: "der Unterschied",
+    example: "Der Unterschied zwischen diesen beiden Konzepten ist minimal.",
+    russian:
+      "разница, различие, Разница между этими двумя концепциями минимальна.",
+    category: "Образование",
+    level: "B1",
+  },
+  {
+    id: 50,
+    german: "der Wandel",
+    example: "Der gesellschaftliche Wandel vollzieht sich immer schneller.",
+    russian:
+      "изменение, перемена, Общественные изменения происходят все быстрее.",
+    category: "Общество",
+    level: "B1",
+  },
+  {
+    id: 51,
+    german: "der Diskurs",
+    example: "Der öffentliche Diskurs über dieses Thema ist kontrovers.",
+    russian:
+      "дискурс, обсуждение, Общественное обсуждение этой темы противоречиво.",
+    category: "Коммуникация",
+    level: "B2",
+  },
+  {
+    id: 52,
+    german: "der Aspekt",
+    example: "Dieser Aspekt wurde in der Diskussion vernachlässigt.",
+    russian: "аспект, Этот аспект был упущен в обсуждении.",
+    category: "Методология",
+    level: "B2",
+  },
+  {
+    id: 53,
+    german: "der Kontext",
+    example: "Man muss diese Aussage im historischen Kontext betrachten.",
+    russian:
+      "контекст, Это высказывание нужно рассматривать в историческом контексте.",
+    category: "История",
+    level: "B2",
+  },
+  {
+    id: 54,
+    german: "der Faktor",
+    example: "Zeit ist ein entscheidender Faktor in diesem Projekt.",
+    russian: "фактор, Время является решающим фактором в этом проекте.",
+    category: "Бизнес",
+    level: "B2",
+  },
+  {
+    id: 55,
+    german: "der Prozess",
+    example: "Der Lernprozess ist bei jedem Menschen unterschiedlich.",
+    russian: "процесс, Процесс обучения у каждого человека разный.",
+    category: "Образование",
+    level: "B2",
+  },
+  {
+    id: 56,
+    german: "der Determinismus",
+    example:
+      "Der Determinismus steht im Widerspruch zur Idee des freien Willens.",
+    russian: "детерминизм, Детерминизм противоречит идее свободной воли.",
+    category: "Философия",
+    level: "C1",
+  },
+  {
+    id: 57,
+    german: "der Relativismus",
+    example:
+      "Der kulturelle Relativismus betont die Gleichwertigkeit verschiedener Kulturen.",
+    russian:
+      "релятивизм, Культурный релятивизм подчеркивает равноценность различных культур.",
+    category: "Философия",
+    level: "C1",
+  },
+  {
+    id: 58,
+    german: "der Pragmatismus",
+    example:
+      "Der Pragmatismus fokussiert sich auf praktische Konsequenzen von Ideen.",
+    russian:
+      "прагматизм, Прагматизм фокусируется на практических последствиях идей.",
+    category: "Философия",
+    level: "C1",
+  },
+  {
+    id: 59,
+    german: "der Antagonismus",
+    example:
+      "Der Antagonismus zwischen diesen beiden Gruppen hat historische Wurzeln.",
+    russian:
+      "антагонизм, противостояние, Противостояние между этими двумя группами имеет исторические корни.",
+    category: "Социология",
+    level: "C1",
+  },
+  {
+    id: 60,
+    german: "der Dualismus",
+    example: "Der cartesianische Dualismus trennt Geist und Körper.",
+    russian: "дуализм, Картезианский дуализм разделяет разум и тело.",
+    category: "Философия",
+    level: "C1",
+  },
+  {
+    id: 61,
+    german: "lernen",
+    example: "Ich lerne jeden Tag neue deutsche Wörter.",
+    russian: "учить, учиться, Я учу новые немецкие слова каждый день.",
+    category: "Образование",
+    level: "B1",
+  },
+  {
+    id: 62,
+    german: "verstehen",
+    example: "Ich verstehe dieses Konzept jetzt besser.",
+    russian: "понимать, Теперь я лучше понимаю эту концепцию.",
+    category: "Образование",
+    level: "B1",
+  },
+  {
+    id: 63,
+    german: "entwickeln",
+    example: "Wir müssen neue Lösungen entwickeln.",
+    russian: "развивать, разрабатывать, Мы должны разработать новые решения.",
+    category: "Бизнес",
+    level: "B1",
+  },
+  {
+    id: 64,
+    german: "verändern",
+    example: "Die Technologie verändert unseren Alltag.",
+    russian: "изменять, менять, Технология меняет нашу повседневную жизнь.",
+    category: "Технологии",
+    level: "B1",
+  },
+  {
+    id: 65,
+    german: "beeinflussen",
+    example: "Soziale Medien beeinflussen unsere Meinungsbildung.",
+    russian:
+      "влиять, оказывать влияние, Социальные сети влияют на формирование нашего мнения.",
+    category: "Медиа",
+    level: "B1",
+  },
+  {
+    id: 66,
+    german: "analysieren",
+    example: "Wir müssen die Daten sorgfältig analysieren.",
+    russian: "анализировать, Мы должны тщательно проанализировать данные.",
+    category: "Наука",
+    level: "B2",
+  },
+  {
+    id: 67,
+    german: "differenzieren",
+    example: "Man muss zwischen verschiedenen Aspekten differenzieren.",
+    russian:
+      "дифференцировать, различать, Нужно различать между разными аспектами.",
+    category: "Методология",
+    level: "B2",
+  },
+  {
+    id: 68,
+    german: "reflektieren",
+    example: "Es ist wichtig, über eigene Erfahrungen zu reflektieren.",
+    russian:
+      "размышлять, рефлексировать, Важно размышлять о собственном опыте.",
+    category: "Психология",
+    level: "B2",
+  },
+  {
+    id: 69,
+    german: "argumentieren",
+    example: "Sie kann überzeugend argumentieren.",
+    russian: "аргументировать, Она может убедительно аргументировать.",
+    category: "Коммуникация",
+    level: "B2",
+  },
+  {
+    id: 70,
+    german: "interpretieren",
+    example: "Jeder kann diese Daten anders interpretieren.",
+    russian:
+      "интерпретировать, толковать, Каждый может по-разному интерпретировать эти данные.",
+    category: "Методология",
+    level: "B2",
+  },
+  {
+    id: 71,
+    german: "dekonstruieren",
+    example: "Der Autor versucht, traditionelle Narrative zu dekonstruieren.",
+    russian:
+      "деконструировать, Автор пытается деконструировать традиционные нарративы.",
+    category: "Литература",
+    level: "C1",
+  },
+  {
+    id: 72,
+    german: "kontextualisieren",
+    example: "Man muss historische Ereignisse immer kontextualisieren.",
+    russian:
+      "контекстуализировать, Исторические события всегда нужно контекстуализировать.",
+    category: "История",
+    level: "C1",
+  },
+  {
+    id: 73,
+    german: "abstrahieren",
+    example: "Von konkreten Beispielen muss man abstrahieren können.",
+    russian:
+      "абстрагировать, Нужно уметь абстрагироваться от конкретных примеров.",
+    category: "Методология",
+    level: "C1",
+  },
+  {
+    id: 74,
+    german: "konzeptualisieren",
+    example: "Wir müssen das Problem neu konzeptualisieren.",
+    russian:
+      "концептуализировать, Мы должны по-новому концептуализировать проблему.",
+    category: "Методология",
+    level: "C1",
+  },
+  {
+    id: 75,
+    german: "problematisieren",
+    example: "Diese Annahme sollte man kritisch problematisieren.",
+    russian:
+      "проблематизировать, Это предположение следует критически проблематизировать.",
+    category: "Методология",
+    level: "C1",
+  },
+  {
+    id: 76,
+    german: "nachhaltig",
+    example: "Wir brauchen nachhaltige Lösungen für Umweltprobleme.",
+    russian:
+      "устойчивый, долговременный, Нам нужны устойчивые решения экологических проблем.",
+    category: "Экология",
+    level: "B1",
+  },
+  {
+    id: 77,
+    german: "wesentlich",
+    example: "Das ist ein wesentlicher Unterschied.",
+    russian: "существенный, значительный, Это существенная разница.",
+    category: "Общее",
+    level: "B1",
+  },
+  {
+    id: 78,
+    german: "vielfältig",
+    example: "Die Gründe dafür sind vielfältig.",
+    russian: "разнообразный, многообразный, Причины для этого разнообразны.",
+    category: "Общее",
+    level: "B1",
+  },
+  {
+    id: 79,
+    german: "relevant",
+    example: "Diese Information ist für uns sehr relevant.",
+    russian: "релевантный, значимый, Эта информация очень значима для нас.",
+    category: "Общее",
+    level: "B1",
+  },
+  {
+    id: 80,
+    german: "grundlegend",
+    example: "Das ist eine grundlegende Veränderung.",
+    russian:
+      "фундаментальный, основополагающий, Это фундаментальное изменение.",
+    category: "Общее",
+    level: "B1",
+  },
+  {
+    id: 81,
+    german: "differenziert",
+    example: "Eine differenzierte Betrachtung ist notwendig.",
+    russian: "дифференцированный, Необходимо дифференцированное рассмотрение.",
+    category: "Методология",
+    level: "B2",
+  },
+  {
+    id: 82,
+    german: "komplex",
+    example: "Das ist ein komplexes Problem.",
+    russian: "сложный, комплексный, Это сложная проблема.",
+    category: "Общее",
+    level: "B2",
+  },
+  {
+    id: 83,
+    german: "interdisziplinär",
+    example: "Wir brauchen einen interdisziplinären Ansatz.",
+    russian: "междисциплинарный, Нам нужен междисциплинарный подход.",
+    category: "Наука",
+    level: "B2",
+  },
+  {
+    id: 84,
+    german: "kontrovers",
+    example: "Dieses Thema wird kontrovers diskutiert.",
+    russian: "спорный, противоречивый, Эта тема обсуждается противоречиво.",
+    category: "Коммуникация",
+    level: "B2",
+  },
+  {
+    id: 85,
+    german: "signifikant",
+    example: "Die Unterschiede sind statistisch signifikant.",
+    russian: "значительный, существенный, Различия статистически значимы.",
+    category: "Наука",
+    level: "B2",
+  },
+  {
+    id: 86,
+    german: "epistemologisch",
+    example: "Das ist eine epistemologische Fragestellung.",
+    russian: "эпистемологический, Это эпистемологический вопрос.",
+    category: "Философия",
+    level: "C1",
+  },
+  {
+    id: 87,
+    german: "paradigmatisch",
+    example: "Dieser Fall ist paradigmatisch für die gesamte Entwicklung.",
+    russian:
+      "парадигматический, Этот случай парадигматичен для всего развития.",
+    category: "Наука",
+    level: "C1",
+  },
+  {
+    id: 88,
+    german: "diskursiv",
+    example: "Die Wahrheit wird diskursiv konstruiert.",
+    russian: "дискурсивный, Истина конструируется дискурсивно.",
+    category: "Философия",
+    level: "C1",
+  },
+  {
+    id: 89,
+    german: "dialektisch",
+    example: "Das ist ein dialektischer Prozess.",
+    russian: "диалектический, Это диалектический процесс.",
+    category: "Философия",
+    level: "C1",
+  },
+  {
+    id: 90,
+    german: "ontologisch",
+    example: "Das ist eine ontologische Annahme.",
+    russian: "онтологический, Это онтологическое предположение.",
+    category: "Философия",
+    level: "C1",
+  },
+  {
+    id: 91,
+    german: "trotzdem",
+    example: "Es regnet, trotzdem gehen wir spazieren.",
+    russian:
+      "несмотря на это, тем не менее, Идет дождь, несмотря на это, мы идем гулять.",
+    category: "Общее",
+    level: "B1",
+  },
+  {
+    id: 92,
+    german: "allerdings",
+    example: "Das stimmt, allerdings gibt es Ausnahmen.",
+    russian: "однако, тем не менее, Это верно, однако есть исключения.",
+    category: "Общее",
+    level: "B1",
+  },
+  {
+    id: 93,
+    german: "daher",
+    example: "Es regnet stark, daher bleiben wir zu Hause.",
+    russian:
+      "поэтому, следовательно, Идет сильный дождь, поэтому мы остаемся дома.",
+    category: "Общее",
+    level: "B1",
+  },
+  {
+    id: 94,
+    german: "außerdem",
+    example: "Er ist intelligent, außerdem ist er sehr fleißig.",
+    russian: "кроме того, к тому же, Он умен, кроме того, он очень прилежен.",
+    category: "Общее",
+    level: "B1",
+  },
+  {
+    id: 95,
+    german: "obwohl",
+    example: "Obwohl es regnet, gehen wir spazieren.",
+    russian: "хотя, несмотря на то что, Хотя идет дождь, мы идем гулять.",
+    category: "Общее",
+    level: "B1",
+  },
+  {
+    id: 96,
+    german: "infolgedessen",
+    example: "Es gab ein Unwetter, infolgedessen wurde der Flug gestrichen.",
+    russian:
+      "вследствие этого, в результате, Была непогода, вследствие этого рейс отменили.",
+    category: "Общее",
+    level: "B2",
+  },
+  {
+    id: 97,
+    german: "nichtsdestotrotz",
+    example:
+      "Die Situation ist schwierig, nichtsdestotrotz bleiben wir optimistisch.",
+    russian:
+      "тем не менее, несмотря на это, Ситуация сложная, тем не менее мы остаемся оптимистичными.",
+    category: "Общее",
+    level: "B2",
+  },
+  {
+    id: 98,
+    german: "demzufolge",
+    example: "Er hat viel gearbeitet, demzufolge ist er jetzt müde.",
+    russian:
+      "следовательно, поэтому, Он много работал, следовательно, он сейчас устал.",
+    category: "Общее",
+    level: "B2",
+  },
+  {
+    id: 99,
+    german: "hingegen",
+    example: "Peter ist sehr ordentlich, Maria hingegen ist chaotisch.",
+    russian:
+      "напротив, в противоположность, Петер очень аккуратный, Мария, напротив, хаотична.",
+    category: "Общее",
+    level: "B2",
+  },
+  {
+    id: 100,
+    german: "insofern",
+    example:
+      "Das Projekt war erfolgreich, insofern haben wir unser Ziel erreicht.",
+    russian:
+      "постольку, в той мере, Проект был успешным, постольку мы достигли нашей цели.",
+    category: "Общее",
+    level: "B2",
+  },
+  {
+    id: 101,
+    german: "die Bildung",
+    example: "Bildung ist der Schlüssel zum Erfolg.",
+    russian: "образование, Образование - это ключ к успеху.",
+    category: "Образование",
+    level: "B1",
+  },
+  {
+    id: 102,
+    german: "die Forschung",
+    example: "Die Forschung in diesem Bereich macht große Fortschritte.",
+    russian: "исследование, Исследования в этой области делают большие успехи.",
+    category: "Наука",
+    level: "B1",
+  },
+  {
+    id: 103,
+    german: "die Lösung",
+    example: "Wir müssen eine Lösung für dieses Problem finden.",
+    russian: "решение, Мы должны найти решение этой проблемы.",
+    category: "Общее",
+    level: "B1",
+  },
+  {
+    id: 104,
+    german: "die Zukunft",
+    example: "Die Zukunft unseres Planeten liegt in unseren Händen.",
+    russian: "будущее, Будущее нашей планеты находится в наших руках.",
+    category: "Общее",
+    level: "B1",
+  },
+  {
+    id: 105,
+    german: "die Kultur",
+    example: "Die deutsche Kultur ist sehr vielfältig.",
+    russian: "культура, Немецкая культура очень разнообразна.",
+    category: "Культура",
+    level: "B1",
+  },
+  {
+    id: 106,
+    german: "die Wirtschaft",
+    example: "Die Wirtschaft des Landes wächst stetig.",
+    russian: "экономика, Экономика страны стабильно растет.",
+    category: "Экономика",
+    level: "B1",
+  },
+  {
+    id: 107,
+    german: "die Politik",
+    example: "Die Politik beeinflusst unser tägliches Leben.",
+    russian: "политика, Политика влияет на нашу повседневную жизнь.",
+    category: "Политика",
+    level: "B1",
+  },
+  {
+    id: 108,
+    german: "die Gesundheit",
+    example: "Gesundheit ist wichtiger als Reichtum.",
+    russian: "здоровье, Здоровье важнее богатства.",
+    category: "Здоровье",
+    level: "B1",
+  },
+  {
+    id: 109,
+    german: "die Sicherheit",
+    example: "Die Sicherheit der Bürger hat höchste Priorität.",
+    russian: "безопасность, Безопасность граждан имеет наивысший приоритет.",
+    category: "Общество",
+    level: "B1",
+  },
+  {
+    id: 110,
+    german: "die Freiheit",
+    example: "Freiheit ist ein grundlegendes Menschenrecht.",
+    russian: "свобода, Свобода - это фундаментальное право человека.",
+    category: "Общество",
+    level: "B1",
+  },
+  {
+    id: 111,
+    german: "die Gerechtigkeit",
+    example: "Gerechtigkeit ist eine wichtige Grundlage unserer Gesellschaft.",
+    russian: "справедливость, Справедливость - важная основа нашего общества.",
+    category: "Общество",
+    level: "B1",
+  },
+  {
+    id: 112,
+    german: "die Kommunikation",
+    example:
+      "Gute Kommunikation ist der Schlüssel zu erfolgreichen Beziehungen.",
+    russian:
+      "коммуникация, общение, Хорошее общение - ключ к успешным отношениям.",
+    category: "Коммуникация",
+    level: "B1",
+  },
+  {
+    id: 113,
+    german: "die Integration",
+    example:
+      "Die Integration von Migranten ist eine gesellschaftliche Aufgabe.",
+    russian: "интеграция, Интеграция мигрантов - это задача общества.",
+    category: "Общество",
+    level: "B2",
+  },
+  {
+    id: 114,
+    german: "die Globalisierung",
+    example: "Die Globalisierung bringt Chancen und Risiken mit sich.",
+    russian: "глобализация, Глобализация несет с собой возможности и риски.",
+    category: "Экономика",
+    level: "B2",
+  },
+  {
+    id: 115,
+    german: "die Nachhaltigkeit",
+    example: "Nachhaltigkeit ist ein wichtiges Prinzip moderner Unternehmen.",
+    russian:
+      "устойчивость, Устойчивость - важный принцип современных предприятий.",
+    category: "Бизнес",
+    level: "B2",
+  },
+  {
+    id: 116,
+    german: "die Innovation",
+    example: "Innovation ist der Schlüssel zum wirtschaftlichen Erfolg.",
+    russian: "инновация, Инновация - ключ к экономическому успеху.",
+    category: "Бизнес",
+    level: "B2",
+  },
+  {
+    id: 117,
+    german: "die Kompetenz",
+    example: "Soziale Kompetenz ist im Berufsleben sehr wichtig.",
+    russian:
+      "компетенция, Социальная компетенция очень важна в профессиональной жизни.",
+    category: "Работа",
+    level: "B2",
+  },
+  {
+    id: 118,
+    german: "die Ressource",
+    example: "Wir müssen mit unseren Ressourcen verantwortungsvoll umgehen.",
+    russian: "ресурс, Мы должны ответственно обращаться с нашими ресурсами.",
+    category: "Экология",
+    level: "B2",
+  },
+  {
+    id: 119,
+    german: "die Identität",
+    example:
+      "Die kulturelle Identität ist ein wichtiger Teil unserer Persönlichkeit.",
+    russian:
+      "идентичность, Культурная идентичность - важная часть нашей личности.",
+    category: "Психология",
+    level: "B2",
+  },
+  {
+    id: 120,
+    german: "die Motivation",
+    example:
+      "Intrinsische Motivation führt zu besseren Ergebnissen als extrinsische.",
+    russian:
+      "мотивация, Внутренняя мотивация приводит к лучшим результатам, чем внешняя.",
+    category: "Психология",
+    level: "B2",
+  },
+  {
+    id: 121,
+    german: "die Transparenz",
+    example: "Transparenz ist wichtig für das Vertrauen der Kunden.",
+    russian: "прозрачность, Прозрачность важна для доверия клиентов.",
+    category: "Бизнес",
+    level: "B2",
+  },
+  {
+    id: 122,
+    german: "die Effizienz",
+    example: "Die Effizienz dieses Prozesses muss verbessert werden.",
+    russian:
+      "эффективность, Эффективность этого процесса должна быть улучшена.",
+    category: "Бизнес",
+    level: "B2",
+  },
+  {
+    id: 123,
+    german: "die Hegemonie",
+    example: "Die kulturelle Hegemonie bestimmter Länder wird oft kritisiert.",
+    russian:
+      "гегемония, Культурная гегемония определенных стран часто подвергается критике.",
+    category: "Политика",
+    level: "C1",
+  },
+  {
+    id: 124,
+    german: "die Heterogenität",
+    example: "Die Heterogenität der Gruppe erschwert die Entscheidungsfindung.",
+    russian:
+      "гетерогенность, разнородность, Разнородность группы затрудняет принятие решений.",
+    category: "Социология",
+    level: "C1",
+  },
+  {
+    id: 125,
+    german: "die Legitimität",
+    example: "Die Legitimität dieser Regierung wird in Frage gestellt.",
+    russian:
+      "легитимность, законность, Законность этого правительства ставится под сомнение.",
+    category: "Политика",
+    level: "C1",
+  },
+  {
+    id: 126,
+    german: "die Polarisierung",
+    example: "Die Polarisierung der Gesellschaft nimmt zu.",
+    russian: "поляризация, Поляризация общества усиливается.",
+    category: "Общество",
+    level: "C1",
+  },
+  {
+    id: 127,
+    german: "die Epistemologie",
+    example:
+      "Die Epistemologie beschäftigt sich mit der Frage, wie wir Wissen erlangen.",
+    russian:
+      "эпистемология, Эпистемология занимается вопросом о том, как мы получаем знания.",
+    category: "Философия",
+    level: "C1",
+  },
+  {
+    id: 128,
+    german: "die Ontologie",
+    example: "Die Ontologie untersucht die Grundstrukturen des Seins.",
+    russian: "онтология, Онтология исследует основные структуры бытия.",
+    category: "Философия",
+    level: "C1",
+  },
+  {
+    id: 129,
+    german: "die Phänomenologie",
+    example:
+      "Die Phänomenologie konzentriert sich auf die Erscheinungsweise der Dinge.",
+    russian:
+      "феноменология, Феноменология концентрируется на способе проявления вещей.",
+    category: "Философия",
+    level: "C1",
+  },
+  {
+    id: 130,
+    german: "die Hermeneutik",
+    example: "Die Hermeneutik ist die Kunst der Interpretation von Texten.",
+    russian:
+      "герменевтика, Герменевтика - это искусство интерпретации текстов.",
+    category: "Философия",
+    level: "C1",
+  },
+  {
+    id: 131,
+    german: "das Wachstum",
+    example: "Das wirtschaftliche Wachstum hat sich verlangsamt.",
+    russian: "рост, Экономический рост замедлился.",
+    category: "Экономика",
+    level: "B1",
+  },
+  {
+    id: 132,
+    german: "das System",
+    example:
+      "Das politische System in Deutschland ist eine parlamentarische Demokratie.",
+    russian:
+      "система, Политическая система в Германии - парламентская демократия.",
+    category: "Политика",
+    level: "B1",
+  },
+  {
+    id: 133,
+    german: "das Problem",
+    example: "Dieses Problem erfordert eine schnelle Lösung.",
+    russian: "проблема, Эта проблема требует быстрого решения.",
+    category: "Общее",
+    level: "B1",
+  },
+  {
+    id: 134,
+    german: "das Thema",
+    example: "Dieses Thema wird in den Medien viel diskutiert.",
+    russian: "тема, Эта тема много обсуждается в СМИ.",
+    category: "Коммуникация",
+    level: "B1",
+  },
+  {
+    id: 135,
+    german: "das Ziel",
+    example: "Mein Ziel ist es, fließend Deutsch zu sprechen.",
+    russian: "цель, Моя цель - свободно говорить по-немецки.",
+    category: "Личное развитие",
+    level: "B1",
+  },
+  {
+    id: 136,
+    german: "das Beispiel",
+    example: "Kannst du mir ein Beispiel geben?",
+    russian: "пример, Можешь привести мне пример?",
+    category: "Коммуникация",
+    level: "B1",
+  },
+  {
+    id: 137,
+    german: "das Ergebnis",
+    example: "Das Ergebnis der Studie war überraschend.",
+    russian: "результат, Результат исследования был удивительным.",
+    category: "Наука",
+    level: "B1",
+  },
+  {
+    id: 138,
+    german: "das Argument",
+    example: "Sein Argument war überzeugend.",
+    russian: "аргумент, Его аргумент был убедительным.",
+    category: "Коммуникация",
+    level: "B2",
+  },
+  {
+    id: 139,
+    german: "das Modell",
+    example: "Dieses Modell erklärt das Phänomen sehr gut.",
+    russian: "модель, Эта модель очень хорошо объясняет феномен.",
+    category: "Наука",
+    level: "B2",
+  },
+  {
+    id: 140,
+    german: "das Prinzip",
+    example: "Das Prinzip der Nachhaltigkeit gewinnt immer mehr an Bedeutung.",
+    russian: "принцип, Принцип устойчивости приобретает все большее значение.",
+    category: "Экология",
+    level: "B2",
+  },
+  {
+    id: 141,
+    german: "das Element",
+    example: "Dieses Element ist entscheidend für den Erfolg des Projekts.",
+    russian:
+      "элемент, Этот элемент имеет решающее значение для успеха проекта.",
+    category: "Бизнес",
+    level: "B2",
+  },
+  {
+    id: 142,
+    german: "das Spektrum",
+    example: "Das Spektrum der Meinungen zu diesem Thema ist sehr breit.",
+    russian: "спектр, Спектр мнений по этой теме очень широк.",
+    category: "Коммуникация",
+    level: "B2",
+  },
+  {
+    id: 143,
+    german: "das Kontinuum",
+    example: "Die Entwicklung verläuft entlang eines Kontinuums.",
+    russian: "континуум, непрерывность, Развитие происходит вдоль континуума.",
+    category: "Наука",
+    level: "C1",
+  },
+  {
+    id: 144,
+    german: "das Theorem",
+    example: "Dieses Theorem bildet die Grundlage der modernen Physik.",
+    russian: "теорема, Эта теорема формирует основу современной физики.",
+    category: "Наука",
+    level: "C1",
+  },
+  {
+    id: 145,
+    german: "das Korollar",
+    example: "Dieses Korollar folgt direkt aus dem Hauptsatz.",
+    russian:
+      "следствие, короллярий, Это следствие прямо вытекает из основной теоремы.",
+    category: "Математика",
+    level: "C1",
+  },
+  {
+    id: 146,
+    german: "der Wandel",
+    example: "Der digitale Wandel verändert die Arbeitswelt.",
+    russian:
+      "изменение, трансформация, Цифровая трансформация меняет мир труда.",
+    category: "Технологии",
+    level: "B1",
+  },
+  {
+    id: 147,
+    german: "der Bereich",
+    example: "In diesem Bereich gibt es viele Möglichkeiten.",
+    russian: "область, сфера, В этой области есть много возможностей.",
+    category: "Общее",
+    level: "B1",
+  },
+  {
+    id: 148,
+    german: "der Grund",
+    example: "Es gibt viele Gründe für diese Entscheidung.",
+    russian: "причина, основание, Есть много причин для этого решения.",
+    category: "Общее",
+    level: "B1",
+  },
+  {
+    id: 149,
+    german: "der Erfolg",
+    example: "Der Erfolg dieses Projekts hängt von vielen Faktoren ab.",
+    russian: "успех, Успех этого проекта зависит от многих факторов.",
+    category: "Бизнес",
+    level: "B1",
+  },
+  {
+    id: 150,
+    german: "der Vorteil",
+    example: "Der Vorteil dieser Methode liegt in ihrer Einfachheit.",
+    russian:
+      "преимущество, Преимущество этого метода заключается в его простоте.",
+    category: "Общее",
+    level: "B1",
+  },
+  {
+    id: 151,
+    german: "der Nachteil",
+    example: "Ein Nachteil ist der hohe Zeitaufwand.",
+    russian: "недостаток, Недостатком является большие затраты времени.",
+    category: "Общее",
+    level: "B1",
+  },
+  {
+    id: 152,
+    german: "der Zweck",
+    example: "Der Zweck dieser Maßnahme ist die Verbesserung der Sicherheit.",
+    russian: "цель, назначение, Цель этой меры - улучшение безопасности.",
+    category: "Общее",
+    level: "B1",
+  },
+  {
+    id: 153,
+    german: "der Anspruch",
+    example: "Der Anspruch auf Qualität ist in diesem Unternehmen sehr hoch.",
+    russian:
+      "требование, претензия, Требование к качеству в этой компании очень высокое.",
+    category: "Бизнес",
+    level: "B2",
+  },
+  {
+    id: 154,
+    german: "der Diskurs",
+    example: "Der wissenschaftliche Diskurs zu diesem Thema ist sehr lebendig.",
+    russian:
+      "дискурс, обсуждение, Научный дискурс по этой теме очень оживленный.",
+    category: "Наука",
+    level: "B2",
+  },
+  {
+    id: 155,
+    german: "der Konsens",
+    example:
+      "Es gibt einen breiten Konsens über die Notwendigkeit von Reformen.",
+    russian:
+      "консенсус, согласие, Существует широкий консенсус о необходимости реформ.",
+    category: "Политика",
+    level: "B2",
+  },
+  {
+    id: 156,
+    german: "der Imperativ",
+    example:
+      "Der kategorische Imperativ ist ein zentrales Konzept in Kants Ethik.",
+    russian:
+      "императив, Категорический императив - центральная концепция в этике Канта.",
+    category: "Философия",
+    level: "C1",
+  },
+  {
+    id: 157,
+    german: "der Empirismus",
+    example:
+      "Der Empirismus betont die Bedeutung der Erfahrung für die Erkenntnis.",
+    russian: "эмпиризм, Эмпиризм подчеркивает значение опыта для познания.",
+    category: "Философия",
+    level: "C1",
+  },
+  {
+    id: 158,
+    german: "der Idealismus",
+    example:
+      "Der deutsche Idealismus hatte großen Einfluss auf die Philosophie.",
+    russian: "идеализм, Немецкий идеализм оказал большое влияние на философию.",
+    category: "Философия",
+    level: "C1",
+  },
+  {
+    id: 159,
+    german: "der Materialismus",
+    example: "Der historische Materialismus ist eine Theorie von Karl Marx.",
+    russian: "материализм, Исторический материализм - это теория Карла Маркса.",
+    category: "Философия",
+    level: "C1",
+  },
+  {
+    id: 160,
+    german: "der Pluralismus",
+    example:
+      "Der Pluralismus ist ein wichtiges Merkmal demokratischer Gesellschaften.",
+    russian:
+      "плюрализм, Плюрализм - важная характеристика демократических обществ.",
+    category: "Политика",
+    level: "C1",
+  },
+  {
+    id: 161,
+    german: "entwickeln",
+    example: "Wir müssen neue Strategien entwickeln.",
+    russian: "развивать, разрабатывать, Мы должны разработать новые стратегии.",
+    category: "Бизнес",
+    level: "B1",
+  },
+  {
+    id: 162,
+    german: "fördern",
+    example: "Der Staat fördert kulturelle Projekte.",
+    russian:
+      "поддерживать, способствовать, Государство поддерживает культурные проекты.",
+    category: "Культура",
+    level: "B1",
+  },
+  {
+    id: 163,
+    german: "verbessern",
+    example: "Wir müssen unsere Sprachkenntnisse verbessern.",
+    russian: "улучшать, Мы должны улучшить наши языковые навыки.",
+    category: "Образование",
+    level: "B1",
+  },
+  {
+    id: 164,
+    german: "vergleichen",
+    example: "Man kann diese beiden Konzepte nicht direkt vergleichen.",
+    russian: "сравнивать, Эти две концепции нельзя напрямую сравнивать.",
+    category: "Методология",
+    level: "B1",
+  },
+  {
+    id: 165,
+    german: "bewerten",
+    example: "Es ist schwierig, den Erfolg dieser Maßnahme zu bewerten.",
+    russian: "оценивать, Трудно оценить успех этой меры.",
+    category: "Методология",
+    level: "B1",
+  },
+  {
+    id: 166,
+    german: "definieren",
+    example: "Wir müssen zunächst den Begriff klar definieren.",
+    russian: "определять, Сначала мы должны четко определить понятие.",
+    category: "Методология",
+    level: "B2",
+  },
+  {
+    id: 167,
+    german: "implementieren",
+    example: "Die neue Strategie wird schrittweise implementiert.",
+    russian: "внедрять, реализовывать, Новая стратегия внедряется постепенно.",
+    category: "Бизнес",
+    level: "B2",
+  },
+  {
+    id: 168,
+    german: "evaluieren",
+    example: "Wir müssen die Ergebnisse des Projekts evaluieren.",
+    russian: "оценивать, анализировать, Мы должны оценить результаты проекта.",
+    category: "Методология",
+    level: "B2",
+  },
+  {
+    id: 169,
+    german: "konzipieren",
+    example: "Das Programm wurde für junge Erwachsene konzipiert.",
+    russian:
+      "разрабатывать, проектировать, Программа была разработана для молодых взрослых.",
+    category: "Методология",
+    level: "B2",
+  },
+  {
+    id: 170,
+    german: "postulieren",
+    example: "Einstein postulierte die Konstanz der Lichtgeschwindigkeit.",
+    russian:
+      "постулировать, утверждать, Эйнштейн постулировал постоянство скорости света.",
+    category: "Наука",
+    level: "C1",
+  },
+  {
+    id: 171,
+    german: "deduzieren",
+    example: "Aus diesen Prämissen können wir folgende Schlüsse deduzieren.",
+    russian:
+      "выводить, дедуцировать, Из этих предпосылок мы можем вывести следующие заключения.",
+    category: "Логика",
+    level: "C1",
+  },
+  {
+    id: 172,
+    german: "induzieren",
+    example:
+      "Aus einzelnen Beobachtungen können wir allgemeine Regeln induzieren.",
+    russian:
+      "индуцировать, выводить, Из отдельных наблюдений мы можем вывести общие правила.",
+    category: "Логика",
+    level: "C1",
+  },
+  {
+    id: 173,
+    german: "nachhaltig",
+    example: "Wir brauchen nachhaltige Lösungen für Umweltprobleme.",
+    russian:
+      "устойчивый, экологичный, Нам нужны устойчивые решения экологических проблем.",
+    category: "Экология",
+    level: "B1",
+  },
+  {
+    id: 174,
+    german: "effektiv",
+    example: "Diese Methode ist sehr effektiv.",
+    russian: "эффективный, действенный, Этот метод очень эффективен.",
+    category: "Методология",
+    level: "B1",
+  },
+  {
+    id: 175,
+    german: "innovativ",
+    example: "Das Unternehmen entwickelt innovative Produkte.",
+    russian: "инновационный, Компания разрабатывает инновационные продукты.",
+    category: "Бизнес",
+    level: "B1",
+  },
+  {
+    id: 176,
+    german: "global",
+    example: "Klimawandel ist ein globales Problem.",
+    russian: "глобальный, мировой, Изменение климата - глобальная проблема.",
+    category: "Экология",
+    level: "B1",
+  },
+  {
+    id: 177,
+    german: "digital",
+    example: "Die digitale Transformation verändert unsere Arbeitswelt.",
+    russian: "цифровой, Цифровая трансформация меняет наш рабочий мир.",
+    category: "Технологии",
+    level: "B1",
+  },
+  {
+    id: 178,
+    german: "interdisziplinär",
+    example: "Dieses Problem erfordert einen interdisziplinären Ansatz.",
+    russian:
+      "междисциплинарный, Эта проблема требует междисциплинарного подхода.",
+    category: "Наука",
+    level: "B2",
+  },
+  {
+    id: 179,
+    german: "empirisch",
+    example: "Die Theorie wird durch empirische Daten gestützt.",
+    russian: "эмпирический, Теория подтверждается эмпирическими данными.",
+    category: "Наука",
+    level: "B2",
+  },
+  {
+    id: 180,
+    german: "theoretisch",
+    example: "Das ist ein interessantes theoretisches Konzept.",
+    russian: "теоретический, Это интересная теоретическая концепция.",
+    category: "Наука",
+    level: "B2",
+  },
+  {
+    id: 181,
+    german: "pragmatisch",
+    example: "Wir brauchen eine pragmatische Lösung für dieses Problem.",
+    russian:
+      "прагматичный, практичный, Нам нужно прагматичное решение этой проблемы.",
+    category: "Методология",
+    level: "B2",
+  },
+  {
+    id: 182,
+    german: "epistemisch",
+    example: "Das ist eine epistemische Herausforderung.",
+    russian: "эпистемический, познавательный, Это эпистемическая проблема.",
+    category: "Философия",
+    level: "C1",
+  },
+  {
+    id: 183,
+    german: "ontologisch",
+    example: "Das ist eine ontologische Frage.",
+    russian: "онтологический, Это онтологический вопрос.",
+    category: "Философия",
+    level: "C1",
+  },
+  {
+    id: 184,
+    german: "phänomenologisch",
+    example: "Das ist ein phänomenologischer Ansatz.",
+    russian: "феноменологический, Это феноменологический подход.",
+    category: "Философия",
+    level: "C1",
+  },
+  {
+    id: 185,
+    german: "hermeneutisch",
+    example: "Das ist eine hermeneutische Interpretation des Textes.",
+    russian: "герменевтический, Это герменевтическая интерпретация текста.",
+    category: "Философия",
+    level: "C1",
+  },
+  {
+    id: 186,
+    german: "dennoch",
+    example: "Es regnet, dennoch gehen wir spazieren.",
+    russian: "тем не менее, всё же, Идет дождь, тем не менее мы идем гулять.",
+    category: "Общее",
+    level: "B1",
+  },
+  {
+    id: 187,
+    german: "deshalb",
+    example: "Es regnet, deshalb bleiben wir zu Hause.",
+    russian: "поэтому, Идет дождь, поэтому мы остаемся дома.",
+    category: "Общее",
+    level: "B1",
+  },
+  {
+    id: 188,
+    german: "jedoch",
+    example: "Er ist intelligent, jedoch fehlt ihm die Erfahrung.",
+    russian: "однако, тем не менее, Он умен, однако ему не хватает опыта.",
+    category: "Общее",
+    level: "B1",
+  },
+  {
+    id: 189,
+    german: "zudem",
+    example: "Er ist intelligent, zudem ist er sehr fleißig.",
+    russian: "кроме того, к тому же, Он умен, кроме того, он очень прилежен.",
+    category: "Общее",
+    level: "B1",
+  },
+  {
+    id: 190,
+    german: "folglich",
+    example: "Er hat viel gearbeitet, folglich ist er müde.",
+    russian:
+      "следовательно, поэтому, Он много работал, следовательно, он устал.",
+    category: "Общее",
+    level: "B2",
+  },
+  {
+    id: 191,
+    german: "dementsprechend",
+    example:
+      "Die Aufgabe ist schwierig, dementsprechend brauchen wir mehr Zeit.",
+    russian:
+      "соответственно, Задача сложная, соответственно, нам нужно больше времени.",
+    category: "Общее",
+    level: "B2",
+  },
+  {
+    id: 192,
+    german: "wohingegen",
+    example: "Peter ist sehr ordentlich, wohingegen Maria chaotisch ist.",
+    russian:
+      "тогда как, в то время как, Петер очень аккуратный, тогда как Мария хаотична.",
+    category: "Общее",
+    level: "B2",
+  },
+  {
+    id: 193,
+    german: "inwiefern",
+    example: "Ich verstehe nicht, inwiefern das relevant ist.",
+    russian: "насколько, в какой мере, Я не понимаю, насколько это актуально.",
+    category: "Общее",
+    level: "B2",
+  },
+  {
+    id: 194,
+    german: "gleichwohl",
+    example: "Die Situation ist schwierig, gleichwohl sind wir optimistisch.",
+    russian:
+      "тем не менее, всё же, Ситуация сложная, тем не менее мы оптимистичны.",
+    category: "Общее",
+    level: "C1",
+  },
+  {
+    id: 195,
+    german: "indessen",
+    example: "Er behauptet das eine, indessen zeigen die Fakten etwas anderes.",
+    russian:
+      "между тем, однако, Он утверждает одно, между тем факты показывают другое.",
+    category: "Общее",
+    level: "C1",
+  },
+  {
+    id: 196,
+    german: "wenngleich",
+    example: "Er ist talentiert, wenngleich ihm noch die Erfahrung fehlt.",
+    russian:
+      "хотя, несмотря на то что, Он талантлив, хотя ему еще не хватает опыта.",
+    category: "Общее",
+    level: "C1",
+  },
+  {
+    id: 197,
+    german: "sofern",
+    example:
+      "Wir können das Projekt starten, sofern die Finanzierung gesichert ist.",
+    russian:
+      "если, при условии что, Мы можем начать проект, если финансирование обеспечено.",
+    category: "Общее",
+    level: "C1",
+  },
+  {
+    id: 198,
+    german: "wobei",
+    example: "Er hat das Projekt geleitet, wobei er viel Unterstützung hatte.",
+    russian:
+      "причем, при этом, Он руководил проектом, причем у него было много поддержки.",
+    category: "Общее",
+    level: "B2",
+  },
+  {
+    id: 199,
+    german: "insofern",
+    example:
+      "Das Projekt war erfolgreich, insofern haben wir unser Ziel erreicht.",
+    russian:
+      "в этом отношении, постольку, Проект был успешным, в этом отношении мы достигли нашей цели.",
+    category: "Общее",
+    level: "B2",
+  },
+  {
+    id: 200,
+    german: "indes",
+    example: "Er versprach zu helfen, indes kam er nie.",
+    russian: "однако, между тем, Он обещал помочь, однако никогда не пришел.",
+    category: "Общее",
+    level: "C1",
   },
-  {
-    "id": 14,
-    "german": "die Auseinandersetzung",
-    "example": "Die Auseinandersetzung mit der eigenen Geschichte ist wichtig.",
-    "russian": "конфронтация, разбирательство, Разбирательство с собственной историей важно.",
-    "category": "Общество",
-    "level": "B2"
-  },
-  {
-    "id": 15,
-    "german": "die Digitalisierung",
-    "example": "Die Digitalisierung verändert unsere Arbeitswelt.",
-    "russian": "цифровизация, Цифровизация меняет наш рабочий мир.",
-    "category": "Технологии",
-    "level": "B2"
-  },
-  {
-    "id": 16,
-    "german": "der Ansatz",
-    "example": "Wir brauchen einen neuen Ansatz zur Lösung dieses Problems.",
-    "russian": "подход, метод, Нам нужен новый подход к решению этой проблемы.",
-    "category": "Методология",
-    "level": "B2"
-  },
-  {
-    "id": 17,
-    "german": "die Wahrnehmung",
-    "example": "Die Wahrnehmung der Realität ist subjektiv.",
-    "russian": "восприятие, Восприятие реальности субъективно.",
-    "category": "Психология",
-    "level": "B2"
-  },
-  {
-    "id": 18,
-    "german": "die Perspektive",
-    "example": "Man sollte Probleme aus verschiedenen Perspektiven betrachten.",
-    "russian": "перспектива, точка зрения, Следует рассматривать проблемы с разных точек зрения.",
-    "category": "Методология",
-    "level": "B2"
-  },
-  {
-    "id": 19,
-    "german": "die Anwendung",
-    "example": "Die praktische Anwendung theoretischer Konzepte ist oft schwierig.",
-    "russian": "применение, использование, Практическое применение теоретических концепций часто сложно.",
-    "category": "Образование",
-    "level": "B2"
-  },
-  {
-    "id": 20,
-    "german": "die Förderung",
-    "example": "Die Förderung junger Talente ist eine Investition in die Zukunft.",
-    "russian": "поддержка, содействие, Поддержка молодых талантов - это инвестиция в будущее.",
-    "category": "Образование",
-    "level": "B2"
-  },
-  {
-    "id": 21,
-    "german": "die Differenzierung",
-    "example": "Eine klare Differenzierung zwischen den Produkten ist notwendig.",
-    "russian": "дифференциация, различение, Четкое различение между продуктами необходимо.",
-    "category": "Бизнес",
-    "level": "C1"
-  },
-  {
-    "id": 22,
-    "german": "die Ambivalenz",
-    "example": "Die Ambivalenz seiner Gefühle machte ihn handlungsunfähig.",
-    "russian": "амбивалентность, двойственность, Двойственность его чувств сделала его неспособным действовать.",
-    "category": "Психология",
-    "level": "C1"
-  },
-  {
-    "id": 23,
-    "german": "die Interdependenz",
-    "example": "Die Interdependenz der globalen Märkte ist offensichtlich.",
-    "russian": "взаимозависимость, Взаимозависимость глобальных рынков очевидна.",
-    "category": "Экономика",
-    "level": "C1"
-  },
-  {
-    "id": 24,
-    "german": "die Konnotation",
-    "example": "Dieses Wort hat eine negative Konnotation in diesem Kontext.",
-    "russian": "коннотация, Это слово имеет негативную коннотацию в данном контексте.",
-    "category": "Лингвистика",
-    "level": "C1"
-  },
-  {
-    "id": 25,
-    "german": "die Prämisse",
-    "example": "Seine Argumentation basiert auf einer falschen Prämisse.",
-    "russian": "предпосылка, посылка, Его аргументация основана на ложной предпосылке.",
-    "category": "Логика",
-    "level": "C1"
-  },
-  {
-    "id": 26,
-    "german": "die Reziprozität",
-    "example": "Reziprozität ist ein grundlegendes Prinzip in sozialen Beziehungen.",
-    "russian": "взаимность, Взаимность - это фундаментальный принцип в социальных отношениях.",
-    "category": "Социология",
-    "level": "C1"
-  },
-  {
-    "id": 27,
-    "german": "die Diskrepanz",
-    "example": "Es gibt eine Diskrepanz zwischen Theorie und Praxis.",
-    "russian": "расхождение, несоответствие, Существует расхождение между теорией и практикой.",
-    "category": "Наука",
-    "level": "C1"
-  },
-  {
-    "id": 28,
-    "german": "die Implikation",
-    "example": "Die Implikationen dieser Entscheidung sind weitreichend.",
-    "russian": "последствие, значение, Последствия этого решения далеко идущие.",
-    "category": "Логика",
-    "level": "C1"
-  },
-  {
-    "id": 29,
-    "german": "die Kohärenz",
-    "example": "Die Kohärenz seiner Argumentation überzeugte das Publikum.",
-    "russian": "связность, согласованность, Связность его аргументации убедила публику.",
-    "category": "Логика",
-    "level": "C1"
-  },
-  {
-    "id": 30,
-    "german": "die Divergenz",
-    "example": "Die Divergenz der Meinungen führte zu einer lebhaften Diskussion.",
-    "russian": "расхождение, различие, Расхождение мнений привело к оживленной дискуссии.",
-    "category": "Коммуникация",
-    "level": "C1"
-  },
-  {
-    "id": 31,
-    "german": "das Verständnis",
-    "example": "Ein tiefes Verständnis der Materie ist erforderlich.",
-    "russian": "понимание, Требуется глубокое понимание предмета.",
-    "category": "Образование",
-    "level": "B1"
-  },
-  {
-    "id": 32,
-    "german": "das Bewusstsein",
-    "example": "Das Umweltbewusstsein wächst in der Gesellschaft.",
-    "russian": "сознание, осознание, Экологическое сознание растет в обществе.",
-    "category": "Экология",
-    "level": "B1"
-  },
-  {
-    "id": 33,
-    "german": "das Verhältnis",
-    "example": "Das Verhältnis zwischen Arbeit und Freizeit ist wichtig.",
-    "russian": "отношение, соотношение, Соотношение между работой и свободным временем важно.",
-    "category": "Работа",
-    "level": "B1"
-  },
-  {
-    "id": 34,
-    "german": "das Ereignis",
-    "example": "Dieses Ereignis hat mein Leben verändert.",
-    "russian": "событие, происшествие, Это событие изменило мою жизнь.",
-    "category": "Личное развитие",
-    "level": "B1"
-  },
-  {
-    "id": 35,
-    "german": "das Verhalten",
-    "example": "Sein Verhalten war in dieser Situation unangemessen.",
-    "russian": "поведение, Его поведение было неуместным в этой ситуации.",
-    "category": "Психология",
-    "level": "B1"
-  },
-  {
-    "id": 36,
-    "german": "das Phänomen",
-    "example": "Dieses Phänomen lässt sich wissenschaftlich erklären.",
-    "russian": "феномен, явление, Это явление можно объяснить научно.",
-    "category": "Наука",
-    "level": "B2"
-  },
-  {
-    "id": 37,
-    "german": "das Konzept",
-    "example": "Das Konzept muss noch weiter ausgearbeitet werden.",
-    "russian": "концепция, концепт, Концепцию нужно еще доработать.",
-    "category": "Методология",
-    "level": "B2"
-  },
-  {
-    "id": 38,
-    "german": "das Potenzial",
-    "example": "Das Potenzial dieser Technologie ist noch nicht ausgeschöpft.",
-    "russian": "потенциал, Потенциал этой технологии еще не исчерпан.",
-    "category": "Технологии",
-    "level": "B2"
-  },
-  {
-    "id": 39,
-    "german": "das Dilemma",
-    "example": "Wir stehen vor einem ethischen Dilemma.",
-    "russian": "дилемма, Мы стоим перед этической дилеммой.",
-    "category": "Этика",
-    "level": "B2"
-  },
-  {
-    "id": 40,
-    "german": "das Kriterium",
-    "example": "Dieses Kriterium ist entscheidend für die Auswahl.",
-    "russian": "критерий, Этот критерий является решающим для выбора.",
-    "category": "Методология",
-    "level": "B2"
-  },
-  {
-    "id": 41,
-    "german": "das Paradigma",
-    "example": "Ein Paradigmenwechsel ist in diesem Bereich notwendig.",
-    "russian": "парадигма, В этой области необходима смена парадигмы.",
-    "category": "Наука",
-    "level": "C1"
-  },
-  {
-    "id": 42,
-    "german": "das Konstrukt",
-    "example": "Identität ist ein soziales Konstrukt.",
-    "russian": "конструкт, Идентичность - это социальный конструкт.",
-    "category": "Социология",
-    "level": "C1"
-  },
-  {
-    "id": 43,
-    "german": "das Postulat",
-    "example": "Dieses Postulat bildet die Grundlage seiner Theorie.",
-    "russian": "постулат, Этот постулат формирует основу его теории.",
-    "category": "Философия",
-    "level": "C1"
-  },
-  {
-    "id": 44,
-    "german": "das Axiom",
-    "example": "Ein Axiom ist eine grundlegende Annahme, die nicht bewiesen werden muss.",
-    "russian": "аксиома, Аксиома - это фундаментальное предположение, которое не требует доказательства.",
-    "category": "Математика",
-    "level": "C1"
-  },
-  {
-    "id": 45,
-    "german": "das Paradoxon",
-    "example": "Dieses Paradoxon lässt sich nicht einfach auflösen.",
-    "russian": "парадокс, Этот парадокс нельзя легко разрешить.",
-    "category": "Логика",
-    "level": "C1"
-  },
-  {
-    "id": 46,
-    "german": "der Fortschritt",
-    "example": "Der technologische Fortschritt verändert unser Leben.",
-    "russian": "прогресс, Технологический прогресс меняет нашу жизнь.",
-    "category": "Технологии",
-    "level": "B1"
-  },
-  {
-    "id": 47,
-    "german": "der Einfluss",
-    "example": "Der Einfluss der Medien auf die öffentliche Meinung ist groß.",
-    "russian": "влияние, Влияние СМИ на общественное мнение велико.",
-    "category": "Медиа",
-    "level": "B1"
-  },
-  {
-    "id": 48,
-    "german": "der Zusammenhang",
-    "example": "Es besteht ein direkter Zusammenhang zwischen Ernährung und Gesundheit.",
-    "russian": "связь, взаимосвязь, Существует прямая связь между питанием и здоровьем.",
-    "category": "Здоровье",
-    "level": "B1"
-  },
-  {
-    "id": 49,
-    "german": "der Unterschied",
-    "example": "Der Unterschied zwischen diesen beiden Konzepten ist minimal.",
-    "russian": "разница, различие, Разница между этими двумя концепциями минимальна.",
-    "category": "Образование",
-    "level": "B1"
-  },
-  {
-    "id": 50,
-    "german": "der Wandel",
-    "example": "Der gesellschaftliche Wandel vollzieht sich immer schneller.",
-    "russian": "изменение, перемена, Общественные изменения происходят все быстрее.",
-    "category": "Общество",
-    "level": "B1"
-  },
-  {
-    "id": 51,
-    "german": "der Diskurs",
-    "example": "Der öffentliche Diskurs über dieses Thema ist kontrovers.",
-    "russian": "дискурс, обсуждение, Общественное обсуждение этой темы противоречиво.",
-    "category": "Коммуникация",
-    "level": "B2"
-  },
-  {
-    "id": 52,
-    "german": "der Aspekt",
-    "example": "Dieser Aspekt wurde in der Diskussion vernachlässigt.",
-    "russian": "аспект, Этот аспект был упущен в обсуждении.",
-    "category": "Методология",
-    "level": "B2"
-  },
-  {
-    "id": 53,
-    "german": "der Kontext",
-    "example": "Man muss diese Aussage im historischen Kontext betrachten.",
-    "russian": "контекст, Это высказывание нужно рассматривать в историческом контексте.",
-    "category": "История",
-    "level": "B2"
-  },
-  {
-    "id": 54,
-    "german": "der Faktor",
-    "example": "Zeit ist ein entscheidender Faktor in diesem Projekt.",
-    "russian": "фактор, Время является решающим фактором в этом проекте.",
-    "category": "Бизнес",
-    "level": "B2"
-  },
-  {
-    "id": 55,
-    "german": "der Prozess",
-    "example": "Der Lernprozess ist bei jedem Menschen unterschiedlich.",
-    "russian": "процесс, Процесс обучения у каждого человека разный.",
-    "category": "Образование",
-    "level": "B2"
-  },
-  {
-    "id": 56,
-    "german": "der Determinismus",
-    "example": "Der Determinismus steht im Widerspruch zur Idee des freien Willens.",
-    "russian": "детерминизм, Детерминизм противоречит идее свободной воли.",
-    "category": "Философия",
-    "level": "C1"
-  },
-  {
-    "id": 57,
-    "german": "der Relativismus",
-    "example": "Der kulturelle Relativismus betont die Gleichwertigkeit verschiedener Kulturen.",
-    "russian": "релятивизм, Культурный релятивизм подчеркивает равноценность различных культур.",
-    "category": "Философия",
-    "level": "C1"
-  },
-  {
-    "id": 58,
-    "german": "der Pragmatismus",
-    "example": "Der Pragmatismus fokussiert sich auf praktische Konsequenzen von Ideen.",
-    "russian": "прагматизм, Прагматизм фокусируется на практических последствиях идей.",
-    "category": "Философия",
-    "level": "C1"
-  },
-  {
-    "id": 59,
-    "german": "der Antagonismus",
-    "example": "Der Antagonismus zwischen diesen beiden Gruppen hat historische Wurzeln.",
-    "russian": "антагонизм, противостояние, Противостояние между этими двумя группами имеет исторические корни.",
-    "category": "Социология",
-    "level": "C1"
-  },
-  {
-    "id": 60,
-    "german": "der Dualismus",
-    "example": "Der cartesianische Dualismus trennt Geist und Körper.",
-    "russian": "дуализм, Картезианский дуализм разделяет разум и тело.",
-    "category": "Философия",
-    "level": "C1"
-  },
-  {
-    "id": 61,
-    "german": "lernen",
-    "example": "Ich lerne jeden Tag neue deutsche Wörter.",
-    "russian": "учить, учиться, Я учу новые немецкие слова каждый день.",
-    "category": "Образование",
-    "level": "B1"
-  },
-  {
-    "id": 62,
-    "german": "verstehen",
-    "example": "Ich verstehe dieses Konzept jetzt besser.",
-    "russian": "понимать, Теперь я лучше понимаю эту концепцию.",
-    "category": "Образование",
-    "level": "B1"
-  },
-  {
-    "id": 63,
-    "german": "entwickeln",
-    "example": "Wir müssen neue Lösungen entwickeln.",
-    "russian": "развивать, разрабатывать, Мы должны разработать новые решения.",
-    "category": "Бизнес",
-    "level": "B1"
-  },
-  {
-    "id": 64,
-    "german": "verändern",
-    "example": "Die Technologie verändert unseren Alltag.",
-    "russian": "изменять, менять, Технология меняет нашу повседневную жизнь.",
-    "category": "Технологии",
-    "level": "B1"
-  },
-  {
-    "id": 65,
-    "german": "beeinflussen",
-    "example": "Soziale Medien beeinflussen unsere Meinungsbildung.",
-    "russian": "влиять, оказывать влияние, Социальные сети влияют на формирование нашего мнения.",
-    "category": "Медиа",
-    "level": "B1"
-  },
-  {
-    "id": 66,
-    "german": "analysieren",
-    "example": "Wir müssen die Daten sorgfältig analysieren.",
-    "russian": "анализировать, Мы должны тщательно проанализировать данные.",
-    "category": "Наука",
-    "level": "B2"
-  },
-  {
-    "id": 67,
-    "german": "differenzieren",
-    "example": "Man muss zwischen verschiedenen Aspekten differenzieren.",
-    "russian": "дифференцировать, различать, Нужно различать между разными аспектами.",
-    "category": "Методология",
-    "level": "B2"
-  },
-  {
-    "id": 68,
-    "german": "reflektieren",
-    "example": "Es ist wichtig, über eigene Erfahrungen zu reflektieren.",
-    "russian": "размышлять, рефлексировать, Важно размышлять о собственном опыте.",
-    "category": "Психология",
-    "level": "B2"
-  },
-  {
-    "id": 69,
-    "german": "argumentieren",
-    "example": "Sie kann überzeugend argumentieren.",
-    "russian": "аргументировать, Она может убедительно аргументировать.",
-    "category": "Коммуникация",
-    "level": "B2"
-  },
-  {
-    "id": 70,
-    "german": "interpretieren",
-    "example": "Jeder kann diese Daten anders interpretieren.",
-    "russian": "интерпретировать, толковать, Каждый может по-разному интерпретировать эти данные.",
-    "category": "Методология",
-    "level": "B2"
-  },
-  {
-    "id": 71,
-    "german": "dekonstruieren",
-    "example": "Der Autor versucht, traditionelle Narrative zu dekonstruieren.",
-    "russian": "деконструировать, Автор пытается деконструировать традиционные нарративы.",
-    "category": "Литература",
-    "level": "C1"
-  },
-  {
-    "id": 72,
-    "german": "kontextualisieren",
-    "example": "Man muss historische Ereignisse immer kontextualisieren.",
-    "russian": "контекстуализировать, Исторические события всегда нужно контекстуализировать.",
-    "category": "История",
-    "level": "C1"
-  },
-  {
-    "id": 73,
-    "german": "abstrahieren",
-    "example": "Von konkreten Beispielen muss man abstrahieren können.",
-    "russian": "абстрагировать, Нужно уметь абстрагироваться от конкретных примеров.",
-    "category": "Методология",
-    "level": "C1"
-  },
-  {
-    "id": 74,
-    "german": "konzeptualisieren",
-    "example": "Wir müssen das Problem neu konzeptualisieren.",
-    "russian": "концептуализировать, Мы должны по-новому концептуализировать проблему.",
-    "category": "Методология",
-    "level": "C1"
-  },
-  {
-    "id": 75,
-    "german": "problematisieren",
-    "example": "Diese Annahme sollte man kritisch problematisieren.",
-    "russian": "проблематизировать, Это предположение следует критически проблематизировать.",
-    "category": "Методология",
-    "level": "C1"
-  },
-  {
-    "id": 76,
-    "german": "nachhaltig",
-    "example": "Wir brauchen nachhaltige Lösungen für Umweltprobleme.",
-    "russian": "устойчивый, долговременный, Нам нужны устойчивые решения экологических проблем.",
-    "category": "Экология",
-    "level": "B1"
-  },
-  {
-    "id": 77,
-    "german": "wesentlich",
-    "example": "Das ist ein wesentlicher Unterschied.",
-    "russian": "существенный, значительный, Это существенная разница.",
-    "category": "Общее",
-    "level": "B1"
-  },
-  {
-    "id": 78,
-    "german": "vielfältig",
-    "example": "Die Gründe dafür sind vielfältig.",
-    "russian": "разнообразный, многообразный, Причины для этого разнообразны.",
-    "category": "Общее",
-    "level": "B1"
-  },
-  {
-    "id": 79,
-    "german": "relevant",
-    "example": "Diese Information ist für uns sehr relevant.",
-    "russian": "релевантный, значимый, Эта информация очень значима для нас.",
-    "category": "Общее",
-    "level": "B1"
-  },
-  {
-    "id": 80,
-    "german": "grundlegend",
-    "example": "Das ist eine grundlegende Veränderung.",
-    "russian": "фундаментальный, основополагающий, Это фундаментальное изменение.",
-    "category": "Общее",
-    "level": "B1"
-  },
-  {
-    "id": 81,
-    "german": "differenziert",
-    "example": "Eine differenzierte Betrachtung ist notwendig.",
-    "russian": "дифференцированный, Необходимо дифференцированное рассмотрение.",
-    "category": "Методология",
-    "level": "B2"
-  },
-  {
-    "id": 82,
-    "german": "komplex",
-    "example": "Das ist ein komplexes Problem.",
-    "russian": "сложный, комплексный, Это сложная проблема.",
-    "category": "Общее",
-    "level": "B2"
-  },
-  {
-    "id": 83,
-    "german": "interdisziplinär",
-    "example": "Wir brauchen einen interdisziplinären Ansatz.",
-    "russian": "междисциплинарный, Нам нужен междисциплинарный подход.",
-    "category": "Наука",
-    "level": "B2"
-  },
-  {
-    "id": 84,
-    "german": "kontrovers",
-    "example": "Dieses Thema wird kontrovers diskutiert.",
-    "russian": "спорный, противоречивый, Эта тема обсуждается противоречиво.",
-    "category": "Коммуникация",
-    "level": "B2"
-  },
-  {
-    "id": 85,
-    "german": "signifikant",
-    "example": "Die Unterschiede sind statistisch signifikant.",
-    "russian": "значительный, существенный, Различия статистически значимы.",
-    "category": "Наука",
-    "level": "B2"
-  },
-  {
-    "id": 86,
-    "german": "epistemologisch",
-    "example": "Das ist eine epistemologische Fragestellung.",
-    "russian": "эпистемологический, Это эпистемологический вопрос.",
-    "category": "Философия",
-    "level": "C1"
-  },
-  {
-    "id": 87,
-    "german": "paradigmatisch",
-    "example": "Dieser Fall ist paradigmatisch für die gesamte Entwicklung.",
-    "russian": "парадигматический, Этот случай парадигматичен для всего развития.",
-    "category": "Наука",
-    "level": "C1"
-  },
-  {
-    "id": 88,
-    "german": "diskursiv",
-    "example": "Die Wahrheit wird diskursiv konstruiert.",
-    "russian": "дискурсивный, Истина конструируется дискурсивно.",
-    "category": "Философия",
-    "level": "C1"
-  },
-  {
-    "id": 89,
-    "german": "dialektisch",
-    "example": "Das ist ein dialektischer Prozess.",
-    "russian": "диалектический, Это диалектический процесс.",
-    "category": "Философия",
-    "level": "C1"
-  },
-  {
-    "id": 90,
-    "german": "ontologisch",
-    "example": "Das ist eine ontologische Annahme.",
-    "russian": "онтологический, Это онтологическое предположение.",
-    "category": "Философия",
-    "level": "C1"
-  },
-  {
-    "id": 91,
-    "german": "trotzdem",
-    "example": "Es regnet, trotzdem gehen wir spazieren.",
-    "russian": "несмотря на это, тем не менее, Идет дождь, несмотря на это, мы идем гулять.",
-    "category": "Общее",
-    "level": "B1"
-  },
-  {
-    "id": 92,
-    "german": "allerdings",
-    "example": "Das stimmt, allerdings gibt es Ausnahmen.",
-    "russian": "однако, тем не менее, Это верно, однако есть исключения.",
-    "category": "Общее",
-    "level": "B1"
-  },
-  {
-    "id": 93,
-    "german": "daher",
-    "example": "Es regnet stark, daher bleiben wir zu Hause.",
-    "russian": "поэтому, следовательно, Идет сильный дождь, поэтому мы остаемся дома.",
-    "category": "Общее",
-    "level": "B1"
-  },
-  {
-    "id": 94,
-    "german": "außerdem",
-    "example": "Er ist intelligent, außerdem ist er sehr fleißig.",
-    "russian": "кроме того, к тому же, Он умен, кроме того, он очень прилежен.",
-    "category": "Общее",
-    "level": "B1"
-  },
-  {
-    "id": 95,
-    "german": "obwohl",
-    "example": "Obwohl es regnet, gehen wir spazieren.",
-    "russian": "хотя, несмотря на то что, Хотя идет дождь, мы идем гулять.",
-    "category": "Общее",
-    "level": "B1"
-  },
-  {
-    "id": 96,
-    "german": "infolgedessen",
-    "example": "Es gab ein Unwetter, infolgedessen wurde der Flug gestrichen.",
-    "russian": "вследствие этого, в результате, Была непогода, вследствие этого рейс отменили.",
-    "category": "Общее",
-    "level": "B2"
-  },
-  {
-    "id": 97,
-    "german": "nichtsdestotrotz",
-    "example": "Die Situation ist schwierig, nichtsdestotrotz bleiben wir optimistisch.",
-    "russian": "тем не менее, несмотря на это, Ситуация сложная, тем не менее мы остаемся оптимистичными.",
-    "category": "Общее",
-    "level": "B2"
-  },
-  {
-    "id": 98,
-    "german": "demzufolge",
-    "example": "Er hat viel gearbeitet, demzufolge ist er jetzt müde.",
-    "russian": "следовательно, поэтому, Он много работал, следовательно, он сейчас устал.",
-    "category": "Общее",
-    "level": "B2"
-  },
-  {
-    "id": 99,
-    "german": "hingegen",
-    "example": "Peter ist sehr ordentlich, Maria hingegen ist chaotisch.",
-    "russian": "напротив, в противоположность, Петер очень аккуратный, Мария, напротив, хаотична.",
-    "category": "Общее",
-    "level": "B2"
-  },
-  {
-    "id": 100,
-    "german": "insofern",
-    "example": "Das Projekt war erfolgreich, insofern haben wir unser Ziel erreicht.",
-    "russian": "постольку, в той мере, Проект был успешным, постольку мы достигли нашей цели.",
-    "category": "Общее",
-    "level": "B2"
-  },
-  {
-    "id": 101,
-    "german": "die Bildung",
-    "example": "Bildung ist der Schlüssel zum Erfolg.",
-    "russian": "образование, Образование - это ключ к успеху.",
-    "category": "Образование",
-    "level": "B1"
-  },
-  {
-    "id": 102,
-    "german": "die Forschung",
-    "example": "Die Forschung in diesem Bereich macht große Fortschritte.",
-    "russian": "исследование, Исследования в этой области делают большие успехи.",
-    "category": "Наука",
-    "level": "B1"
-  },
-  {
-    "id": 103,
-    "german": "die Lösung",
-    "example": "Wir müssen eine Lösung für dieses Problem finden.",
-    "russian": "решение, Мы должны найти решение этой проблемы.",
-    "category": "Общее",
-    "level": "B1"
-  },
-  {
-    "id": 104,
-    "german": "die Zukunft",
-    "example": "Die Zukunft unseres Planeten liegt in unseren Händen.",
-    "russian": "будущее, Будущее нашей планеты находится в наших руках.",
-    "category": "Общее",
-    "level": "B1"
-  },
-  {
-    "id": 105,
-    "german": "die Kultur",
-    "example": "Die deutsche Kultur ist sehr vielfältig.",
-    "russian": "культура, Немецкая культура очень разнообразна.",
-    "category": "Культура",
-    "level": "B1"
-  },
-  {
-    "id": 106,
-    "german": "die Wirtschaft",
-    "example": "Die Wirtschaft des Landes wächst stetig.",
-    "russian": "экономика, Экономика страны стабильно растет.",
-    "category": "Экономика",
-    "level": "B1"
-  },
-  {
-    "id": 107,
-    "german": "die Politik",
-    "example": "Die Politik beeinflusst unser tägliches Leben.",
-    "russian": "политика, Политика влияет на нашу повседневную жизнь.",
-    "category": "Политика",
-    "level": "B1"
-  },
-  {
-    "id": 108,
-    "german": "die Gesundheit",
-    "example": "Gesundheit ist wichtiger als Reichtum.",
-    "russian": "здоровье, Здоровье важнее богатства.",
-    "category": "Здоровье",
-    "level": "B1"
-  },
-  {
-    "id": 109,
-    "german": "die Sicherheit",
-    "example": "Die Sicherheit der Bürger hat höchste Priorität.",
-    "russian": "безопасность, Безопасность граждан имеет наивысший приоритет.",
-    "category": "Общество",
-    "level": "B1"
-  },
-  {
-    "id": 110,
-    "german": "die Freiheit",
-    "example": "Freiheit ist ein grundlegendes Menschenrecht.",
-    "russian": "свобода, Свобода - это фундаментальное право человека.",
-    "category": "Общество",
-    "level": "B1"
-  },
-  {
-    "id": 111,
-    "german": "die Gerechtigkeit",
-    "example": "Gerechtigkeit ist eine wichtige Grundlage unserer Gesellschaft.",
-    "russian": "справедливость, Справедливость - важная основа нашего общества.",
-    "category": "Общество",
-    "level": "B1"
-  },
-  {
-    "id": 112,
-    "german": "die Kommunikation",
-    "example": "Gute Kommunikation ist der Schlüssel zu erfolgreichen Beziehungen.",
-    "russian": "коммуникация, общение, Хорошее общение - ключ к успешным отношениям.",
-    "category": "Коммуникация",
-    "level": "B1"
-  },
-  {
-    "id": 113,
-    "german": "die Integration",
-    "example": "Die Integration von Migranten ist eine gesellschaftliche Aufgabe.",
-    "russian": "интеграция, Интеграция мигрантов - это задача общества.",
-    "category": "Общество",
-    "level": "B2"
-  },
-  {
-    "id": 114,
-    "german": "die Globalisierung",
-    "example": "Die Globalisierung bringt Chancen und Risiken mit sich.",
-    "russian": "глобализация, Глобализация несет с собой возможности и риски.",
-    "category": "Экономика",
-    "level": "B2"
-  },
-  {
-    "id": 115,
-    "german": "die Nachhaltigkeit",
-    "example": "Nachhaltigkeit ist ein wichtiges Prinzip moderner Unternehmen.",
-    "russian": "устойчивость, Устойчивость - важный принцип современных предприятий.",
-    "category": "Бизнес",
-    "level": "B2"
-  },
-  {
-    "id": 116,
-    "german": "die Innovation",
-    "example": "Innovation ist der Schlüssel zum wirtschaftlichen Erfolg.",
-    "russian": "инновация, Инновация - ключ к экономическому успеху.",
-    "category": "Бизнес",
-    "level": "B2"
-  },
-  {
-    "id": 117,
-    "german": "die Kompetenz",
-    "example": "Soziale Kompetenz ist im Berufsleben sehr wichtig.",
-    "russian": "компетенция, Социальная компетенция очень важна в профессиональной жизни.",
-    "category": "Работа",
-    "level": "B2"
-  },
-  {
-    "id": 118,
-    "german": "die Ressource",
-    "example": "Wir müssen mit unseren Ressourcen verantwortungsvoll umgehen.",
-    "russian": "ресурс, Мы должны ответственно обращаться с нашими ресурсами.",
-    "category": "Экология",
-    "level": "B2"
-  },
-  {
-    "id": 119,
-    "german": "die Identität",
-    "example": "Die kulturelle Identität ist ein wichtiger Teil unserer Persönlichkeit.",
-    "russian": "идентичность, Культурная идентичность - важная часть нашей личности.",
-    "category": "Психология",
-    "level": "B2"
-  },
-  {
-    "id": 120,
-    "german": "die Motivation",
-    "example": "Intrinsische Motivation führt zu besseren Ergebnissen als extrinsische.",
-    "russian": "мотивация, Внутренняя мотивация приводит к лучшим результатам, чем внешняя.",
-    "category": "Психология",
-    "level": "B2"
-  },
-  {
-    "id": 121,
-    "german": "die Transparenz",
-    "example": "Transparenz ist wichtig für das Vertrauen der Kunden.",
-    "russian": "прозрачность, Прозрачность важна для доверия клиентов.",
-    "category": "Бизнес",
-    "level": "B2"
-  },
-  {
-    "id": 122,
-    "german": "die Effizienz",
-    "example": "Die Effizienz dieses Prozesses muss verbessert werden.",
-    "russian": "эффективность, Эффективность этого процесса должна быть улучшена.",
-    "category": "Бизнес",
-    "level": "B2"
-  },
-  {
-    "id": 123,
-    "german": "die Hegemonie",
-    "example": "Die kulturelle Hegemonie bestimmter Länder wird oft kritisiert.",
-    "russian": "гегемония, Культурная гегемония определенных стран часто подвергается критике.",
-    "category": "Политика",
-    "level": "C1"
-  },
-  {
-    "id": 124,
-    "german": "die Heterogenität",
-    "example": "Die Heterogenität der Gruppe erschwert die Entscheidungsfindung.",
-    "russian": "гетерогенность, разнородность, Разнородность группы затрудняет принятие решений.",
-    "category": "Социология",
-    "level": "C1"
-  },
-  {
-    "id": 125,
-    "german": "die Legitimität",
-    "example": "Die Legitimität dieser Regierung wird in Frage gestellt.",
-    "russian": "легитимность, законность, Законность этого правительства ставится под сомнение.",
-    "category": "Политика",
-    "level": "C1"
-  },
-  {
-    "id": 126,
-    "german": "die Polarisierung",
-    "example": "Die Polarisierung der Gesellschaft nimmt zu.",
-    "russian": "поляризация, Поляризация общества усиливается.",
-    "category": "Общество",
-    "level": "C1"
-  },
-  {
-    "id": 127,
-    "german": "die Epistemologie",
-    "example": "Die Epistemologie beschäftigt sich mit der Frage, wie wir Wissen erlangen.",
-    "russian": "эпистемология, Эпистемология занимается вопросом о том, как мы получаем знания.",
-    "category": "Философия",
-    "level": "C1"
-  },
-  {
-    "id": 128,
-    "german": "die Ontologie",
-    "example": "Die Ontologie untersucht die Grundstrukturen des Seins.",
-    "russian": "онтология, Онтология исследует основные структуры бытия.",
-    "category": "Философия",
-    "level": "C1"
-  },
-  {
-    "id": 129,
-    "german": "die Phänomenologie",
-    "example": "Die Phänomenologie konzentriert sich auf die Erscheinungsweise der Dinge.",
-    "russian": "феноменология, Феноменология концентрируется на способе проявления вещей.",
-    "category": "Философия",
-    "level": "C1"
-  },
-  {
-    "id": 130,
-    "german": "die Hermeneutik",
-    "example": "Die Hermeneutik ist die Kunst der Interpretation von Texten.",
-    "russian": "герменевтика, Герменевтика - это искусство интерпретации текстов.",
-    "category": "Философия",
-    "level": "C1"
-  },
-  {
-    "id": 131,
-    "german": "das Wachstum",
-    "example": "Das wirtschaftliche Wachstum hat sich verlangsamt.",
-    "russian": "рост, Экономический рост замедлился.",
-    "category": "Экономика",
-    "level": "B1"
-  },
-  {
-    "id": 132,
-    "german": "das System",
-    "example": "Das politische System in Deutschland ist eine parlamentarische Demokratie.",
-    "russian": "система, Политическая система в Германии - парламентская демократия.",
-    "category": "Политика",
-    "level": "B1"
-  },
-  {
-    "id": 133,
-    "german": "das Problem",
-    "example": "Dieses Problem erfordert eine schnelle Lösung.",
-    "russian": "проблема, Эта проблема требует быстрого решения.",
-    "category": "Общее",
-    "level": "B1"
-  },
-  {
-    "id": 134,
-    "german": "das Thema",
-    "example": "Dieses Thema wird in den Medien viel diskutiert.",
-    "russian": "тема, Эта тема много обсуждается в СМИ.",
-    "category": "Коммуникация",
-    "level": "B1"
-  },
-  {
-    "id": 135,
-    "german": "das Ziel",
-    "example": "Mein Ziel ist es, fließend Deutsch zu sprechen.",
-    "russian": "цель, Моя цель - свободно говорить по-немецки.",
-    "category": "Личное развитие",
-    "level": "B1"
-  },
-  {
-    "id": 136,
-    "german": "das Beispiel",
-    "example": "Kannst du mir ein Beispiel geben?",
-    "russian": "пример, Можешь привести мне пример?",
-    "category": "Коммуникация",
-    "level": "B1"
-  },
-  {
-    "id": 137,
-    "german": "das Ergebnis",
-    "example": "Das Ergebnis der Studie war überraschend.",
-    "russian": "результат, Результат исследования был удивительным.",
-    "category": "Наука",
-    "level": "B1"
-  },
-  {
-    "id": 138,
-    "german": "das Argument",
-    "example": "Sein Argument war überzeugend.",
-    "russian": "аргумент, Его аргумент был убедительным.",
-    "category": "Коммуникация",
-    "level": "B2"
-  },
-  {
-    "id": 139,
-    "german": "das Modell",
-    "example": "Dieses Modell erklärt das Phänomen sehr gut.",
-    "russian": "модель, Эта модель очень хорошо объясняет феномен.",
-    "category": "Наука",
-    "level": "B2"
-  },
-  {
-    "id": 140,
-    "german": "das Prinzip",
-    "example": "Das Prinzip der Nachhaltigkeit gewinnt immer mehr an Bedeutung.",
-    "russian": "принцип, Принцип устойчивости приобретает все большее значение.",
-    "category": "Экология",
-    "level": "B2"
-  },
-  {
-    "id": 141,
-    "german": "das Element",
-    "example": "Dieses Element ist entscheidend für den Erfolg des Projekts.",
-    "russian": "элемент, Этот элемент имеет решающее значение для успеха проекта.",
-    "category": "Бизнес",
-    "level": "B2"
-  },
-  {
-    "id": 142,
-    "german": "das Spektrum",
-    "example": "Das Spektrum der Meinungen zu diesem Thema ist sehr breit.",
-    "russian": "спектр, Спектр мнений по этой теме очень широк.",
-    "category": "Коммуникация",
-    "level": "B2"
-  },
-  {
-    "id": 143,
-    "german": "das Kontinuum",
-    "example": "Die Entwicklung verläuft entlang eines Kontinuums.",
-    "russian": "континуум, непрерывность, Развитие происходит вдоль континуума.",
-    "category": "Наука",
-    "level": "C1"
-  },
-  {
-    "id": 144,
-    "german": "das Theorem",
-    "example": "Dieses Theorem bildet die Grundlage der modernen Physik.",
-    "russian": "теорема, Эта теорема формирует основу современной физики.",
-    "category": "Наука",
-    "level": "C1"
-  },
-  {
-    "id": 145,
-    "german": "das Korollar",
-    "example": "Dieses Korollar folgt direkt aus dem Hauptsatz.",
-    "russian": "следствие, короллярий, Это следствие прямо вытекает из основной теоремы.",
-    "category": "Математика",
-    "level": "C1"
-  },
-  {
-    "id": 146,
-    "german": "der Wandel",
-    "example": "Der digitale Wandel verändert die Arbeitswelt.",
-    "russian": "изменение, трансформация, Цифровая трансформация меняет мир труда.",
-    "category": "Технологии",
-    "level": "B1"
-  },
-  {
-    "id": 147,
-    "german": "der Bereich",
-    "example": "In diesem Bereich gibt es viele Möglichkeiten.",
-    "russian": "область, сфера, В этой области есть много возможностей.",
-    "category": "Общее",
-    "level": "B1"
-  },
-  {
-    "id": 148,
-    "german": "der Grund",
-    "example": "Es gibt viele Gründe für diese Entscheidung.",
-    "russian": "причина, основание, Есть много причин для этого решения.",
-    "category": "Общее",
-    "level": "B1"
-  },
-  {
-    "id": 149,
-    "german": "der Erfolg",
-    "example": "Der Erfolg dieses Projekts hängt von vielen Faktoren ab.",
-    "russian": "успех, Успех этого проекта зависит от многих факторов.",
-    "category": "Бизнес",
-    "level": "B1"
-  },
-  {
-    "id": 150,
-    "german": "der Vorteil",
-    "example": "Der Vorteil dieser Methode liegt in ihrer Einfachheit.",
-    "russian": "преимущество, Преимущество этого метода заключается в его простоте.",
-    "category": "Общее",
-    "level": "B1"
-  },
-  {
-    "id": 151,
-    "german": "der Nachteil",
-    "example": "Ein Nachteil ist der hohe Zeitaufwand.",
-    "russian": "недостаток, Недостатком является большие затраты времени.",
-    "category": "Общее",
-    "level": "B1"
-  },
-  {
-    "id": 152,
-    "german": "der Zweck",
-    "example": "Der Zweck dieser Maßnahme ist die Verbesserung der Sicherheit.",
-    "russian": "цель, назначение, Цель этой меры - улучшение безопасности.",
-    "category": "Общее",
-    "level": "B1"
-  },
-  {
-    "id": 153,
-    "german": "der Anspruch",
-    "example": "Der Anspruch auf Qualität ist in diesem Unternehmen sehr hoch.",
-    "russian": "требование, претензия, Требование к качеству в этой компании очень высокое.",
-    "category": "Бизнес",
-    "level": "B2"
-  },
-  {
-    "id": 154,
-    "german": "der Diskurs",
-    "example": "Der wissenschaftliche Diskurs zu diesem Thema ist sehr lebendig.",
-    "russian": "дискурс, обсуждение, Научный дискурс по этой теме очень оживленный.",
-    "category": "Наука",
-    "level": "B2"
-  },
-  {
-    "id": 155,
-    "german": "der Konsens",
-    "example": "Es gibt einen breiten Konsens über die Notwendigkeit von Reformen.",
-    "russian": "консенсус, согласие, Существует широкий консенсус о необходимости реформ.",
-    "category": "Политика",
-    "level": "B2"
-  },
-  {
-    "id": 156,
-    "german": "der Imperativ",
-    "example": "Der kategorische Imperativ ist ein zentrales Konzept in Kants Ethik.",
-    "russian": "императив, Категорический императив - центральная концепция в этике Канта.",
-    "category": "Философия",
-    "level": "C1"
-  },
-  {
-    "id": 157,
-    "german": "der Empirismus",
-    "example": "Der Empirismus betont die Bedeutung der Erfahrung für die Erkenntnis.",
-    "russian": "эмпиризм, Эмпиризм подчеркивает значение опыта для познания.",
-    "category": "Философия",
-    "level": "C1"
-  },
-  {
-    "id": 158,
-    "german": "der Idealismus",
-    "example": "Der deutsche Idealismus hatte großen Einfluss auf die Philosophie.",
-    "russian": "идеализм, Немецкий идеализм оказал большое влияние на философию.",
-    "category": "Философия",
-    "level": "C1"
-  },
-  {
-    "id": 159,
-    "german": "der Materialismus",
-    "example": "Der historische Materialismus ist eine Theorie von Karl Marx.",
-    "russian": "материализм, Исторический материализм - это теория Карла Маркса.",
-    "category": "Философия",
-    "level": "C1"
-  },
-  {
-    "id": 160,
-    "german": "der Pluralismus",
-    "example": "Der Pluralismus ist ein wichtiges Merkmal demokratischer Gesellschaften.",
-    "russian": "плюрализм, Плюрализм - важная характеристика демократических обществ.",
-    "category": "Политика",
-    "level": "C1"
-  },
-  {
-    "id": 161,
-    "german": "entwickeln",
-    "example": "Wir müssen neue Strategien entwickeln.",
-    "russian": "развивать, разрабатывать, Мы должны разработать новые стратегии.",
-    "category": "Бизнес",
-    "level": "B1"
-  },
-  {
-    "id": 162,
-    "german": "fördern",
-    "example": "Der Staat fördert kulturelle Projekte.",
-    "russian": "поддерживать, способствовать, Государство поддерживает культурные проекты.",
-    "category": "Культура",
-    "level": "B1"
-  },
-  {
-    "id": 163,
-    "german": "verbessern",
-    "example": "Wir müssen unsere Sprachkenntnisse verbessern.",
-    "russian": "улучшать, Мы должны улучшить наши языковые навыки.",
-    "category": "Образование",
-    "level": "B1"
-  },
-  {
-    "id": 164,
-    "german": "vergleichen",
-    "example": "Man kann diese beiden Konzepte nicht direkt vergleichen.",
-    "russian": "сравнивать, Эти две концепции нельзя напрямую сравнивать.",
-    "category": "Методология",
-    "level": "B1"
-  },
-  {
-    "id": 165,
-    "german": "bewerten",
-    "example": "Es ist schwierig, den Erfolg dieser Maßnahme zu bewerten.",
-    "russian": "оценивать, Трудно оценить успех этой меры.",
-    "category": "Методология",
-    "level": "B1"
-  },
-  {
-    "id": 166,
-    "german": "definieren",
-    "example": "Wir müssen zunächst den Begriff klar definieren.",
-    "russian": "определять, Сначала мы должны четко определить понятие.",
-    "category": "Методология",
-    "level": "B2"
-  },
-  {
-    "id": 167,
-    "german": "implementieren",
-    "example": "Die neue Strategie wird schrittweise implementiert.",
-    "russian": "внедрять, реализовывать, Новая стратегия внедряется постепенно.",
-    "category": "Бизнес",
-    "level": "B2"
-  },
-  {
-    "id": 168,
-    "german": "evaluieren",
-    "example": "Wir müssen die Ergebnisse des Projekts evaluieren.",
-    "russian": "оценивать, анализировать, Мы должны оценить результаты проекта.",
-    "category": "Методология",
-    "level": "B2"
-  },
-  {
-    "id": 169,
-    "german": "konzipieren",
-    "example": "Das Programm wurde für junge Erwachsene konzipiert.",
-    "russian": "разрабатывать, проектировать, Программа была разработана для молодых взрослых.",
-    "category": "Методология",
-    "level": "B2"
-  },
-  {
-    "id": 170,
-    "german": "postulieren",
-    "example": "Einstein postulierte die Konstanz der Lichtgeschwindigkeit.",
-    "russian": "постулировать, утверждать, Эйнштейн постулировал постоянство скорости света.",
-    "category": "Наука",
-    "level": "C1"
-  },
-  {
-    "id": 171,
-    "german": "deduzieren",
-    "example": "Aus diesen Prämissen können wir folgende Schlüsse deduzieren.",
-    "russian": "выводить, дедуцировать, Из этих предпосылок мы можем вывести следующие заключения.",
-    "category": "Логика",
-    "level": "C1"
-  },
-  {
-    "id": 172,
-    "german": "induzieren",
-    "example": "Aus einzelnen Beobachtungen können wir allgemeine Regeln induzieren.",
-    "russian": "индуцировать, выводить, Из отдельных наблюдений мы можем вывести общие правила.",
-    "category": "Логика",
-    "level": "C1"
-  },
-  {
-    "id": 173,
-    "german": "nachhaltig",
-    "example": "Wir brauchen nachhaltige Lösungen für Umweltprobleme.",
-    "russian": "устойчивый, экологичный, Нам нужны устойчивые решения экологических проблем.",
-    "category": "Экология",
-    "level": "B1"
-  },
-  {
-    "id": 174,
-    "german": "effektiv",
-    "example": "Diese Methode ist sehr effektiv.",
-    "russian": "эффективный, действенный, Этот метод очень эффективен.",
-    "category": "Методология",
-    "level": "B1"
-  },
-  {
-    "id": 175,
-    "german": "innovativ",
-    "example": "Das Unternehmen entwickelt innovative Produkte.",
-    "russian": "инновационный, Компания разрабатывает инновационные продукты.",
-    "category": "Бизнес",
-    "level": "B1"
-  },
-  {
-    "id": 176,
-    "german": "global",
-    "example": "Klimawandel ist ein globales Problem.",
-    "russian": "глобальный, мировой, Изменение климата - глобальная проблема.",
-    "category": "Экология",
-    "level": "B1"
-  },
-  {
-    "id": 177,
-    "german": "digital",
-    "example": "Die digitale Transformation verändert unsere Arbeitswelt.",
-    "russian": "цифровой, Цифровая трансформация меняет наш рабочий мир.",
-    "category": "Технологии",
-    "level": "B1"
-  },
-  {
-    "id": 178,
-    "german": "interdisziplinär",
-    "example": "Dieses Problem erfordert einen interdisziplinären Ansatz.",
-    "russian": "междисциплинарный, Эта проблема требует междисциплинарного подхода.",
-    "category": "Наука",
-    "level": "B2"
-  },
-  {
-    "id": 179,
-    "german": "empirisch",
-    "example": "Die Theorie wird durch empirische Daten gestützt.",
-    "russian": "эмпирический, Теория подтверждается эмпирическими данными.",
-    "category": "Наука",
-    "level": "B2"
-  },
-  {
-    "id": 180,
-    "german": "theoretisch",
-    "example": "Das ist ein interessantes theoretisches Konzept.",
-    "russian": "теоретический, Это интересная теоретическая концепция.",
-    "category": "Наука",
-    "level": "B2"
-  },
-  {
-    "id": 181,
-    "german": "pragmatisch",
-    "example": "Wir brauchen eine pragmatische Lösung für dieses Problem.",
-    "russian": "прагматичный, практичный, Нам нужно прагматичное решение этой проблемы.",
-    "category": "Методология",
-    "level": "B2"
-  },
-  {
-    "id": 182,
-    "german": "epistemisch",
-    "example": "Das ist eine epistemische Herausforderung.",
-    "russian": "эпистемический, познавательный, Это эпистемическая проблема.",
-    "category": "Философия",
-    "level": "C1"
-  },
-  {
-    "id": 183,
-    "german": "ontologisch",
-    "example": "Das ist eine ontologische Frage.",
-    "russian": "онтологический, Это онтологический вопрос.",
-    "category": "Философия",
-    "level": "C1"
-  },
-  {
-    "id": 184,
-    "german": "phänomenologisch",
-    "example": "Das ist ein phänomenologischer Ansatz.",
-    "russian": "феноменологический, Это феноменологический подход.",
-    "category": "Философия",
-    "level": "C1"
-  },
-  {
-    "id": 185,
-    "german": "hermeneutisch",
-    "example": "Das ist eine hermeneutische Interpretation des Textes.",
-    "russian": "герменевтический, Это герменевтическая интерпретация текста.",
-    "category": "Философия",
-    "level": "C1"
-  },
-  {
-    "id": 186,
-    "german": "dennoch",
-    "example": "Es regnet, dennoch gehen wir spazieren.",
-    "russian": "тем не менее, всё же, Идет дождь, тем не менее мы идем гулять.",
-    "category": "Общее",
-    "level": "B1"
-  },
-  {
-    "id": 187,
-    "german": "deshalb",
-    "example": "Es regnet, deshalb bleiben wir zu Hause.",
-    "russian": "поэтому, Идет дождь, поэтому мы остаемся дома.",
-    "category": "Общее",
-    "level": "B1"
-  },
-  {
-    "id": 188,
-    "german": "jedoch",
-    "example": "Er ist intelligent, jedoch fehlt ihm die Erfahrung.",
-    "russian": "однако, тем не менее, Он умен, однако ему не хватает опыта.",
-    "category": "Общее",
-    "level": "B1"
-  },
-  {
-    "id": 189,
-    "german": "zudem",
-    "example": "Er ist intelligent, zudem ist er sehr fleißig.",
-    "russian": "кроме того, к тому же, Он умен, кроме того, он очень прилежен.",
-    "category": "Общее",
-    "level": "B1"
-  },
-  {
-    "id": 190,
-    "german": "folglich",
-    "example": "Er hat viel gearbeitet, folglich ist er müde.",
-    "russian": "следовательно, поэтому, Он много работал, следовательно, он устал.",
-    "category": "Общее",
-    "level": "B2"
-  },
-  {
-    "id": 191,
-    "german": "dementsprechend",
-    "example": "Die Aufgabe ist schwierig, dementsprechend brauchen wir mehr Zeit.",
-    "russian": "соответственно, Задача сложная, соответственно, нам нужно больше времени.",
-    "category": "Общее",
-    "level": "B2"
-  },
-  {
-    "id": 192,
-    "german": "wohingegen",
-    "example": "Peter ist sehr ordentlich, wohingegen Maria chaotisch ist.",
-    "russian": "тогда как, в то время как, Петер очень аккуратный, тогда как Мария хаотична.",
-    "category": "Общее",
-    "level": "B2"
-  },
-  {
-    "id": 193,
-    "german": "inwiefern",
-    "example": "Ich verstehe nicht, inwiefern das relevant ist.",
-    "russian": "насколько, в какой мере, Я не понимаю, насколько это актуально.",
-    "category": "Общее",
-    "level": "B2"
-  },
-  {
-    "id": 194,
-    "german": "gleichwohl",
-    "example": "Die Situation ist schwierig, gleichwohl sind wir optimistisch.",
-    "russian": "тем не менее, всё же, Ситуация сложная, тем не менее мы оптимистичны.",
-    "category": "Общее",
-    "level": "C1"
-  },
-  {
-    "id": 195,
-    "german": "indessen",
-    "example": "Er behauptet das eine, indessen zeigen die Fakten etwas anderes.",
-    "russian": "между тем, однако, Он утверждает одно, между тем факты показывают другое.",
-    "category": "Общее",
-    "level": "C1"
-  },
-  {
-    "id": 196,
-    "german": "wenngleich",
-    "example": "Er ist talentiert, wenngleich ihm noch die Erfahrung fehlt.",
-    "russian": "хотя, несмотря на то что, Он талантлив, хотя ему еще не хватает опыта.",
-    "category": "Общее",
-    "level": "C1"
-  },
-  {
-    "id": 197,
-    "german": "sofern",
-    "example": "Wir können das Projekt starten, sofern die Finanzierung gesichert ist.",
-    "russian": "если, при условии что, Мы можем начать проект, если финансирование обеспечено.",
-    "category": "Общее",
-    "level": "C1"
-  },
-  {
-    "id": 198,
-    "german": "wobei",
-    "example": "Er hat das Projekt geleitet, wobei er viel Unterstützung hatte.",
-    "russian": "причем, при этом, Он руководил проектом, причем у него было много поддержки.",
-    "category": "Общее",
-    "level": "B2"
-  },
-  {
-    "id": 199,
-    "german": "insofern",
-    "example": "Das Projekt war erfolgreich, insofern haben wir unser Ziel erreicht.",
-    "russian": "в этом отношении, постольку, Проект был успешным, в этом отношении мы достигли нашей цели.",
-    "category": "Общее",
-    "level": "B2"
-  },
-  {
-    "id": 200,
-    "german": "indes",
-    "example": "Er versprach zu helfen, indes kam er nie.",
-    "russian": "однако, между тем, Он обещал помочь, однако никогда не пришел.",
-    "category": "Общее",
-    "level": "C1"
-  }
 ];
-
